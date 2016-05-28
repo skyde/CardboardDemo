@@ -59,7 +59,7 @@ public class SCR_Character : MonoBehaviour
 
 				CurrentJoint.Init();
 				CurrentJoint.Active = true;
-				CurrentPoint.Active = true;
+				CurrentPoint.Init();
 
 				CurrentPoint.GetComponent<Collider>().enabled = true;
 

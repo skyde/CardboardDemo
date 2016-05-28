@@ -12,6 +12,18 @@ public class SCR_LatticePoint : MonoBehaviour
 	public Vector3 Velocity;
 	public bool Active = true;
 
+//	public SCR_LatticePoint
+
+	public void Start()
+	{
+		Init();
+	}
+
+	public void Init()
+	{
+		Active = SCR_ToggleLatticePhysics.Instance.Active;
+	}
+
 	public void Update () 
 	{
 		if(!Active)

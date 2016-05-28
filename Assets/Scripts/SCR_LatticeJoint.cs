@@ -43,7 +43,7 @@ public class SCR_LatticeJoint : MonoBehaviour
 
 		var norm = length == 0 ? Vector3.up : diff / length;
 
-		if(Active)
+		if(Active && A.Active && B.Active)
 		{
 			var push = length - Distance;
 

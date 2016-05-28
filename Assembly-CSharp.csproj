@@ -85,6 +85,7 @@
      <Compile Include="Assets\GoogleVR\Scripts\VRDevices\EditorDevice.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\VRDevices\GvrDevice.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\VRDevices\iOSDevice.cs" />
+     <Compile Include="Assets\SCR_ToggleLatticePhysics.cs" />
      <Compile Include="Assets\Scripts\DATA_Renderer.cs" />
      <Compile Include="Assets\Scripts\SCR_Character.cs" />
      <Compile Include="Assets\Scripts\SCR_EditorPan.cs" />
