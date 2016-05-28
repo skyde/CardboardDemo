@@ -22,6 +22,8 @@ struct Rigidbody_t1972007546;
 #include "UnityEngine_UnityEngine_Ray1522967639.h"
 #include "UnityEngine_UnityEngine_RaycastHit46221527.h"
 
+// System.Void UnityEngine.Collider::set_enabled(System.Boolean)
+extern "C"  void Collider_set_enabled_m2575670866 (Collider_t955670625 * __this, bool ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Rigidbody UnityEngine.Collider::get_attachedRigidbody()
 extern "C"  Rigidbody_t1972007546 * Collider_get_attachedRigidbody_m2821754842 (Collider_t955670625 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Collider::Internal_Raycast(UnityEngine.Collider,UnityEngine.Ray,UnityEngine.RaycastHit&,System.Single)

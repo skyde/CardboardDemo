@@ -34,6 +34,8 @@ extern "C"  Quaternion_t1891715979  Quaternion_AngleAxis_m644124247 (Il2CppObjec
 extern "C"  void Quaternion_INTERNAL_CALL_AngleAxis_m1562314763 (Il2CppObject * __this /* static, unused */, float ___angle0, Vector3_t3525329789 * ___axis1, Quaternion_t1891715979 * ___value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Quaternion::LookRotation(UnityEngine.Vector3,UnityEngine.Vector3)
 extern "C"  Quaternion_t1891715979  Quaternion_LookRotation_m2869326048 (Il2CppObject * __this /* static, unused */, Vector3_t3525329789  ___forward0, Vector3_t3525329789  ___upwards1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Quaternion UnityEngine.Quaternion::LookRotation(UnityEngine.Vector3)
+extern "C"  Quaternion_t1891715979  Quaternion_LookRotation_m1257501645 (Il2CppObject * __this /* static, unused */, Vector3_t3525329789  ___forward0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Quaternion::INTERNAL_CALL_LookRotation(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
 extern "C"  void Quaternion_INTERNAL_CALL_LookRotation_m1501255504 (Il2CppObject * __this /* static, unused */, Vector3_t3525329789 * ___forward0, Vector3_t3525329789 * ___upwards1, Quaternion_t1891715979 * ___value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Inverse(UnityEngine.Quaternion)

@@ -4680,6 +4680,15 @@ extern "C"  bool CanvasRenderer_get_hasMoved_m1392755130 (CanvasRenderer_t362620
 	_il2cpp_icall_func = (CanvasRenderer_get_hasMoved_m1392755130_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.CanvasRenderer::get_hasMoved()");
 	return _il2cpp_icall_func(__this);
 }
+// System.Void UnityEngine.Collider::set_enabled(System.Boolean)
+extern "C"  void Collider_set_enabled_m2575670866 (Collider_t955670625 * __this, bool ___value0, const MethodInfo* method)
+{
+	typedef void (*Collider_set_enabled_m2575670866_ftn) (Collider_t955670625 *, bool);
+	static Collider_set_enabled_m2575670866_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Collider_set_enabled_m2575670866_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Collider::set_enabled(System.Boolean)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 // UnityEngine.Rigidbody UnityEngine.Collider::get_attachedRigidbody()
 extern "C"  Rigidbody_t1972007546 * Collider_get_attachedRigidbody_m2821754842 (Collider_t955670625 * __this, const MethodInfo* method)
 {
