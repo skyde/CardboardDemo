@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum ConstructState
+{
+	Nothing,
+	CreatingPoint
+}
+
 public class SCR_Character : MonoBehaviour
 {
 	public static SCR_Character Instance;
@@ -14,6 +20,17 @@ public class SCR_Character : MonoBehaviour
 
 	public float Speed = 1;
 
+	public ConstructState State;
+
+	public SCR_LatticePoint CurrentPoint;
+	public SCR_LatticeJoint CurrentJoint;
+
+	public GameObject PointPrefab;
+	public GameObject JointPrefab;
+	public float CreateDistance;
+
+//	public SCR_LatticePoint
+
 	public void Awake ()
 	{
 		Instance = this;
@@ -21,36 +38,88 @@ public class SCR_Character : MonoBehaviour
 	
 	public void Update ()
 	{
-//		Cardboard
-
-//		if(GvrViewer.Instance.Triggered)
-//		{
-//			Moving = !Moving;
-//		}
-
-		if(Target.Active)
+		if(GvrViewer.Instance.Triggered)
 		{
-			var target = new Vector3(Target.transform.position.x, transform.position.y, Target.transform.position.z);
+			var gaze = Head.Gaze;
 
-			//ViewDirection.transform.forward
+			if(State == ConstructState.CreatingPoint)
+			{
+				State = ConstructState.Nothing;
 
-			transform.position = Vector3.MoveTowards(transform.position, target, Time.smoothDeltaTime * Speed * 3F);
+				RaycastHit info;
+				if(Physics.Raycast(gaze, out info))
+				{
+					if(info.collider.tag == "Lattice Point")
+					{
+						CurrentJoint.B = info.collider.gameObject.GetComponent<SCR_LatticePoint>();
 
-//			transform.position = ;
+						Destroy(CurrentPoint.gameObject);
+					}
+				}
+
+				CurrentJoint.Init();
+				CurrentJoint.Active = true;
+				CurrentPoint.Active = true;
+
+				CurrentPoint.GetComponent<Collider>().enabled = true;
+
+				CurrentPoint = null;
+				CurrentJoint = null;
+			}
+			else
+			{
+				RaycastHit info;
+				if(Physics.Raycast(gaze, out info))
+				{
+					// Move
+					if(info.collider.tag == "Ground")
+					{
+						Target.Active = true;
+						Target.transform.position = info.point;
+					}
+					// Lattice
+					else if(info.collider.tag == "Lattice Point")
+					{
+						State = ConstructState.CreatingPoint;
+
+						CurrentPoint = Instantiate(PointPrefab).GetComponent<SCR_LatticePoint>();
+						CurrentJoint = Instantiate(JointPrefab).GetComponent<SCR_LatticeJoint>();
+
+						CurrentJoint.Active = false;
+						CurrentPoint.Active = false;
+
+						CurrentJoint.A = info.collider.gameObject.GetComponent<SCR_LatticePoint>();
+						CurrentJoint.B = CurrentPoint;
+
+						CurrentPoint.GetComponent<Collider>().enabled = false;
+
+						CreateDistance = info.distance;
+					}
+				}
+			}
+		}
+
+		if(State == ConstructState.CreatingPoint)
+		{
+			var gaze = Head.Gaze;
+//			CurrentJoint
+			CurrentPoint.transform.position = gaze.origin + gaze.direction * CreateDistance;
+		}
+		else if (State == ConstructState.Nothing)
+		{
+			// Update Movement
+			if(Target.Active)
+			{
+				var target = new Vector3(Target.transform.position.x, transform.position.y, Target.transform.position.z);
+
+				transform.position = Vector3.MoveTowards(transform.position, target, Time.smoothDeltaTime * Speed * 3F);
+			}
 		}
 	}
 
-	public void GotoViewPosition()
-	{
-		var ray = Head.Gaze;
-
-		RaycastHit info;
-		if(Physics.Raycast(ray, out info))
-		{
-			Target.Active = true;
-			Target.transform.position = info.point;
-		}
-	}
+//	public void GotoViewPosition()
+//	{
+//	}
 
 //	public void OnDown()
 //	{

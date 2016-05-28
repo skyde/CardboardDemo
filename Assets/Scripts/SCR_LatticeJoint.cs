@@ -18,8 +18,18 @@ public class SCR_LatticeJoint : MonoBehaviour
 			return;
 		}
 
-		Distance = (A.transform.position - B.transform.position).magnitude;
+		Init();
 	}
+
+	public void Init()
+	{
+		if(A == null || B == null)
+		{
+			return;
+		}
+			
+		Distance = (A.transform.position - B.transform.position).magnitude;
+	}	
 
 	public void LateUpdate () 
 	{

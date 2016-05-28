@@ -10,9 +10,15 @@ public class SCR_LatticePoint : MonoBehaviour
 	public float Gravity = 1;
 
 	public Vector3 Velocity;
+	public bool Active = true;
 
 	public void Update () 
 	{
+		if(!Active)
+		{
+			return;
+		}
+
 		transform.position += Velocity * Time.deltaTime;
 
 		if(transform.position.y < Radius)
