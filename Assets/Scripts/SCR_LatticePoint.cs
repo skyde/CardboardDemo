@@ -33,6 +33,17 @@ public class SCR_LatticePoint : MonoBehaviour
 
 		transform.position += Velocity * Time.deltaTime;
 
+		UpdateCollision();
+
+		Velocity = new Vector3(
+			Velocity.x * Damping,
+			Velocity.y * Damping - Gravity * Time.deltaTime,
+			Velocity.z * Damping);
+
+	}
+
+	public void UpdateCollision()
+	{
 		if(transform.position.y < Radius)
 		{
 			transform.position = new Vector3(
@@ -45,11 +56,5 @@ public class SCR_LatticePoint : MonoBehaviour
 				Mathf.Abs(Velocity.y) * BounceDamping,
 				Velocity.z);
 		}
-
-		Velocity = new Vector3(
-			Velocity.x * Damping,
-			Velocity.y * Damping - Gravity * Time.deltaTime,
-			Velocity.z * Damping);
-
 	}
 }

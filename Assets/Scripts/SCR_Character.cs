@@ -104,6 +104,7 @@ public class SCR_Character : MonoBehaviour
 			var gaze = Head.Gaze;
 //			CurrentJoint
 			CurrentPoint.transform.position = gaze.origin + gaze.direction * CreateDistance;
+			CurrentPoint.UpdateCollision();
 		}
 		else if (State == ConstructState.Nothing)
 		{
