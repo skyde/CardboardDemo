@@ -47,8 +47,6 @@ public class SCR_InteractiveObject : MonoBehaviour
 
 		if(body)
 		{
-			print(body);
-
 			body.AddForce(SCR_Character.Instance.Head.Gaze.direction * 700);
 		}
 	}
