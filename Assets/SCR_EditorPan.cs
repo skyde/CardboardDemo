@@ -16,7 +16,7 @@ public class SCR_EditorPan : MonoBehaviour
 	
 	public void Update () 
 	{
-		if(Input.GetMouseButton(0))
+		if(Input.GetMouseButton(1))
 		{
 			if(lastPosition != null)
 			{
