@@ -1812,6 +1812,11 @@ extern Il2CppGenericClass IEnumerable_1_t651205303_GenericClass;
 extern Il2CppGenericClass Func_2_t4046587907_GenericClass;
 extern Il2CppGenericClass IEnumerable_1_t399725874_GenericClass;
 extern Il2CppGenericClass Func_2_t1028872879_GenericClass;
+extern Il2CppGenericClass IEnumerator_1_t2575790528_GenericClass;
+extern Il2CppGenericClass InternalEnumerator_1_t1000174583_GenericClass;
+extern Il2CppGenericClass ICollection_1_t1558515466_GenericClass;
+extern Il2CppGenericClass IList_1_t3259176394_GenericClass;
+extern Il2CppGenericClass IEnumerable_1_t3964838436_GenericClass;
 extern Il2CppGenericClass IEnumerator_1_t543085528_GenericClass;
 extern Il2CppGenericClass IEnumerator_1_t155284324_GenericClass;
 extern Il2CppGenericClass InternalEnumerator_1_t2874635675_GenericClass;
@@ -2096,7 +2101,7 @@ extern Il2CppGenericClass IMessageLite_1_t1220286535_GenericClass;
 extern Il2CppGenericClass IBuilderLite_2_t4082087050_GenericClass;
 extern Il2CppGenericClass IMessageLite_2_t68138062_GenericClass;
 extern Il2CppGenericClass IMessageLite_1_t3479473168_GenericClass;
-extern Il2CppGenericClass* const s_Il2CppGenericTypes[2078] = 
+extern Il2CppGenericClass* const s_Il2CppGenericTypes[2083] = 
 {
 	&IEnumerator_1_t2320212868_GenericClass,
 	&InternalEnumerator_1_t744596923_GenericClass,
@@ -3892,6 +3897,11 @@ extern Il2CppGenericClass* const s_Il2CppGenericTypes[2078] =
 	&Func_2_t4046587907_GenericClass,
 	&IEnumerable_1_t399725874_GenericClass,
 	&Func_2_t1028872879_GenericClass,
+	&IEnumerator_1_t2575790528_GenericClass,
+	&InternalEnumerator_1_t1000174583_GenericClass,
+	&ICollection_1_t1558515466_GenericClass,
+	&IList_1_t3259176394_GenericClass,
+	&IEnumerable_1_t3964838436_GenericClass,
 	&IEnumerator_1_t543085528_GenericClass,
 	&IEnumerator_1_t155284324_GenericClass,
 	&InternalEnumerator_1_t2874635675_GenericClass,

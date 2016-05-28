@@ -869,6 +869,7 @@
 #include "UnityEngine_UnityEngine_iOS_RemoteNotification1121285571.h"
 #include "UnityEngine_UnityEngine_Experimental_Director_Play1575932342.h"
 #include "UnityEngine_UnityEngine_Experimental_Director_Play3404354247.h"
+#include "UnityEngine_UnityEngine_ForceMode759713627.h"
 #include "UnityEngine_UnityEngine_ControllerColliderHit2693066224.h"
 #include "UnityEngine_UnityEngine_Collision1119538015.h"
 #include "UnityEngine_UnityEngine_QueryTriggerInteraction4085533775.h"
@@ -1166,7 +1167,9 @@
 #include "AssemblyU2DCSharp_Gvr_Internal_BaseVRDevice864282971.h"
 #include "AssemblyU2DCSharp_Gvr_Internal_GvrDevice1224326321.h"
 #include "AssemblyU2DCSharp_Gvr_Internal_iOSDevice3202447355.h"
+#include "AssemblyU2DCSharp_DATA_Renderer475655640.h"
 #include "AssemblyU2DCSharp_SCR_Character2234088204.h"
+#include "AssemblyU2DCSharp_SCR_InteractiveObject3425393060.h"
 #include "AssemblyU2DCSharp_SCR_MoveTarget2017391935.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
@@ -1627,7 +1630,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9307] = 
+extern const int32_t g_FieldOffsetTable[9316] = 
 {
 	0,
 	0,
@@ -8618,6 +8621,11 @@ extern const int32_t g_FieldOffsetTable[9307] =
 	0,
 	Playable_t3404354247::get_offset_of_m_Ptr_0(),
 	Playable_t3404354247::get_offset_of_m_UniqueId_1(),
+	ForceMode_t759713627::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
 	ControllerColliderHit_t2693066224::get_offset_of_m_Controller_0(),
 	ControllerColliderHit_t2693066224::get_offset_of_m_Collider_1(),
 	ControllerColliderHit_t2693066224::get_offset_of_m_Point_2(),
@@ -10923,10 +10931,14 @@ extern const int32_t g_FieldOffsetTable[9307] =
 	GvrDevice_t1224326321::get_offset_of_debugDisableNativeProjections_32(),
 	GvrDevice_t1224326321::get_offset_of_debugDisableNativeUILayer_33(),
 	iOSDevice_t3202447355::get_offset_of_isOpenGL_34(),
-	SCR_Character_t2234088204::get_offset_of_ViewDirection_2(),
-	SCR_Character_t2234088204::get_offset_of_Target_3(),
-	SCR_Character_t2234088204::get_offset_of_Head_4(),
-	SCR_Character_t2234088204::get_offset_of_Speed_5(),
+	DATA_Renderer_t475655640::get_offset_of_InitalColor_2(),
+	SCR_Character_t2234088204_StaticFields::get_offset_of_Instance_2(),
+	SCR_Character_t2234088204::get_offset_of_ViewDirection_3(),
+	SCR_Character_t2234088204::get_offset_of_Target_4(),
+	SCR_Character_t2234088204::get_offset_of_Head_5(),
+	SCR_Character_t2234088204::get_offset_of_Speed_6(),
+	SCR_InteractiveObject_t3425393060::get_offset_of_Renderers_2(),
+	SCR_InteractiveObject_t3425393060::get_offset_of_HighlightColor_3(),
 	SCR_MoveTarget_t2017391935::get_offset_of_Character_2(),
 	SCR_MoveTarget_t2017391935::get_offset_of_Active_3(),
 	SCR_MoveTarget_t2017391935::get_offset_of_Graphic_4(),
@@ -10940,7 +10952,7 @@ extern const int32_t g_FieldOffsetTable[9307] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1848] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -12333,6 +12345,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] =
 	sizeof (DirectorPlayer_t608261574), -1, 0, 0,
 	sizeof (PlayState_t1575932342)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (Playable_t3404354247), -1, 0, 0,
+	sizeof (ForceMode_t759713627)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (ControllerColliderHit_t2693066224), -1, 0, 0,
 	sizeof (Collision_t1119538015), -1, 0, 0,
 	sizeof (QueryTriggerInteraction_t4085533775)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
@@ -12780,8 +12793,10 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] =
 	sizeof (BaseVRDevice_t864282971), -1, sizeof(BaseVRDevice_t864282971_StaticFields), 0,
 	sizeof (GvrDevice_t1224326321), -1, 0, 0,
 	sizeof (iOSDevice_t3202447355), -1, 0, 0,
-	sizeof (SCR_Character_t2234088204), -1, 0, 0,
+	sizeof (DATA_Renderer_t475655640), -1, 0, 0,
+	sizeof (SCR_Character_t2234088204), -1, sizeof(SCR_Character_t2234088204_StaticFields), 0,
 	sizeof (SCR_EditorPan_t3113534419), -1, 0, 0,
+	sizeof (SCR_InteractiveObject_t3425393060), -1, 0, 0,
 	sizeof (SCR_MoveTarget_t2017391935), -1, 0, 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238938), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields), 0,
 	sizeof (U24ArrayTypeU2428_t214874523)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2428_t214874523_marshaled_pinvoke), 0, 0,

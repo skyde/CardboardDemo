@@ -13,6 +13,8 @@
 #include <limits>
 #include <assert.h>
 
+// UnityEngine.SerializePrivateVariables
+struct SerializePrivateVariables_t2126293601;
 // System.Collections.IEnumerator
 struct IEnumerator_t287207039;
 // System.Object
@@ -160,10 +162,13 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "UnityEngine_UnityEngine_SerializePrivateVariables2126293601.h"
+#include "UnityEngine_UnityEngine_SerializePrivateVariables2126293601MethodDeclarations.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "mscorlib_System_Attribute498693649MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SetupCoroutine1135105352.h"
 #include "UnityEngine_UnityEngine_SetupCoroutine1135105352MethodDeclarations.h"
 #include "mscorlib_System_IntPtr676692020.h"
-#include "mscorlib_System_Void2779279689.h"
 #include "mscorlib_System_IntPtr676692020MethodDeclarations.h"
 #include "mscorlib_System_ArgumentException124305799MethodDeclarations.h"
 #include "mscorlib_System_Boolean211005341.h"
@@ -185,7 +190,6 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "UnityEngine_UnityEngine_Matrix4x4277289660.h"
 #include "UnityEngine_UnityEngine_SharedBetweenAnimatorsAttr3749847808.h"
 #include "UnityEngine_UnityEngine_SharedBetweenAnimatorsAttr3749847808MethodDeclarations.h"
-#include "mscorlib_System_Attribute498693649MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SkeletonBone3129897246.h"
 #include "UnityEngine_UnityEngine_SkeletonBone3129897246MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector33525329789.h"
@@ -416,6 +420,14 @@ struct TypeInferenceRuleAttribute_t471424957;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.SerializePrivateVariables::.ctor()
+extern "C"  void SerializePrivateVariables__ctor_m889466149 (SerializePrivateVariables_t2126293601 * __this, const MethodInfo* method)
+{
+	{
+		Attribute__ctor_m2985353781(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.SetupCoroutine::InvokeMoveNext(System.Collections.IEnumerator,System.IntPtr)
 extern Il2CppClass* IntPtr_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* ArgumentException_t124305799_il2cpp_TypeInfo_var;

@@ -218,6 +218,9 @@ extern "C"  ObjectU5BU5D_t11523773* Component_GetComponentsInParent_TisIl2CppObj
 // !!0[] UnityEngine.GameObject::GetComponentsInParent<System.Object>(System.Boolean)
 extern "C"  ObjectU5BU5D_t11523773* GameObject_GetComponentsInParent_TisIl2CppObject_m1351944637_gshared (GameObject_t4012695102 * __this, bool p0, const MethodInfo* method);
 #define GameObject_GetComponentsInParent_TisIl2CppObject_m1351944637(__this, p0, method) ((  ObjectU5BU5D_t11523773* (*) (GameObject_t4012695102 *, bool, const MethodInfo*))GameObject_GetComponentsInParent_TisIl2CppObject_m1351944637_gshared)(__this, p0, method)
+// T[] UnityEngine.GameObject::GetComponentsInChildren<System.Object>()
+extern "C"  ObjectU5BU5D_t11523773* GameObject_GetComponentsInChildren_TisIl2CppObject_m3418406430_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_GetComponentsInChildren_TisIl2CppObject_m3418406430(__this, method) ((  ObjectU5BU5D_t11523773* (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m3418406430_gshared)(__this, method)
 // T[] UnityEngine.Object::FindObjectsOfType<System.Object>()
 extern "C"  ObjectU5BU5D_t11523773* Object_FindObjectsOfType_TisIl2CppObject_m3888714627_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
 #define Object_FindObjectsOfType_TisIl2CppObject_m3888714627(__this /* static, unused */, method) ((  ObjectU5BU5D_t11523773* (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectsOfType_TisIl2CppObject_m3888714627_gshared)(__this /* static, unused */, method)
@@ -1058,6 +1061,16 @@ extern "C"  ObjectU5BU5D_t11523773* GameObject_GetComponents_TisIl2CppObject_m31
 		NullCheck((GameObject_t4012695102 *)__this);
 		Il2CppArray * L_1 = GameObject_GetComponentsInternal_m181453881((GameObject_t4012695102 *)__this, (Type_t *)L_0, (bool)1, (bool)0, (bool)1, (bool)0, (Il2CppObject *)NULL, /*hidden argument*/NULL);
 		return ((ObjectU5BU5D_t11523773*)Castclass(L_1, IL2CPP_RGCTX_DATA(method->rgctx_data, 1)));
+	}
+}
+// T[] UnityEngine.GameObject::GetComponentsInChildren<System.Object>()
+// T[] UnityEngine.GameObject::GetComponentsInChildren<System.Object>()
+extern "C"  ObjectU5BU5D_t11523773* GameObject_GetComponentsInChildren_TisIl2CppObject_m3418406430_gshared (GameObject_t4012695102 * __this, const MethodInfo* method)
+{
+	{
+		NullCheck((GameObject_t4012695102 *)__this);
+		ObjectU5BU5D_t11523773* L_0 = ((  ObjectU5BU5D_t11523773* (*) (GameObject_t4012695102 *, bool, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->method)((GameObject_t4012695102 *)__this, (bool)0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		return L_0;
 	}
 }
 // T[] UnityEngine.GameObject::GetComponentsInChildren<System.Object>(System.Boolean)

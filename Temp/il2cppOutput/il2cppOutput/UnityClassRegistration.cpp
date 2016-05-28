@@ -135,113 +135,113 @@ void RegisterAllClasses()
 	void RegisterClass_GameObject();
 	RegisterClass_GameObject();
 
-	//25. Collider
+	//25. Rigidbody
+	void RegisterClass_Rigidbody();
+	RegisterClass_Rigidbody();
+
+	//26. Collider
 	void RegisterClass_Collider();
 	RegisterClass_Collider();
 
-	//26. Collider2D
+	//27. Collider2D
 	void RegisterClass_Collider2D();
 	RegisterClass_Collider2D();
 
-	//27. AudioClip
+	//28. AudioClip
 	void RegisterClass_AudioClip();
 	RegisterClass_AudioClip();
 
-	//28. SampleClip
+	//29. SampleClip
 	void RegisterClass_SampleClip();
 	RegisterClass_SampleClip();
 
-	//29. AudioSource
+	//30. AudioSource
 	void RegisterClass_AudioSource();
 	RegisterClass_AudioSource();
 
-	//30. AudioBehaviour
+	//31. AudioBehaviour
 	void RegisterClass_AudioBehaviour();
 	RegisterClass_AudioBehaviour();
 
-	//31. AudioMixer
+	//32. AudioMixer
 	void RegisterClass_AudioMixer();
 	RegisterClass_AudioMixer();
 
-	//32. Animator
+	//33. Animator
 	void RegisterClass_Animator();
 	RegisterClass_Animator();
 
-	//33. DirectorPlayer
+	//34. DirectorPlayer
 	void RegisterClass_DirectorPlayer();
 	RegisterClass_DirectorPlayer();
 
-	//34. Font
+	//35. Font
 	void RegisterClass_Font();
 	RegisterClass_Font();
 
-	//35. Canvas
+	//36. Canvas
 	void RegisterClass_Canvas();
 	RegisterClass_Canvas();
 
-	//36. CanvasGroup
+	//37. CanvasGroup
 	void RegisterClass_CanvasGroup();
 	RegisterClass_CanvasGroup();
 
-	//37. CanvasRenderer
+	//38. CanvasRenderer
 	void RegisterClass_CanvasRenderer();
 	RegisterClass_CanvasRenderer();
 
-	//38. AudioMixerGroup
+	//39. AudioMixerGroup
 	void RegisterClass_AudioMixerGroup();
 	RegisterClass_AudioMixerGroup();
 
-	//39. SpriteRenderer
+	//40. SpriteRenderer
 	void RegisterClass_SpriteRenderer();
 	RegisterClass_SpriteRenderer();
 
-	//40. RuntimeAnimatorController
+	//41. RuntimeAnimatorController
 	void RegisterClass_RuntimeAnimatorController();
 	RegisterClass_RuntimeAnimatorController();
 
-	//41. PreloadData
+	//42. PreloadData
 	void RegisterClass_PreloadData();
 	RegisterClass_PreloadData();
 
-	//42. Cubemap
+	//43. Cubemap
 	void RegisterClass_Cubemap();
 	RegisterClass_Cubemap();
 
-	//43. Texture3D
+	//44. Texture3D
 	void RegisterClass_Texture3D();
 	RegisterClass_Texture3D();
 
-	//44. LevelGameManager
+	//45. LevelGameManager
 	void RegisterClass_LevelGameManager();
 	RegisterClass_LevelGameManager();
 
-	//45. TimeManager
+	//46. TimeManager
 	void RegisterClass_TimeManager();
 	RegisterClass_TimeManager();
 
-	//46. AudioManager
+	//47. AudioManager
 	void RegisterClass_AudioManager();
 	RegisterClass_AudioManager();
 
-	//47. InputManager
+	//48. InputManager
 	void RegisterClass_InputManager();
 	RegisterClass_InputManager();
 
-	//48. Physics2DSettings
+	//49. Physics2DSettings
 	void RegisterClass_Physics2DSettings();
 	RegisterClass_Physics2DSettings();
 
-	//49. MeshRenderer
+	//50. MeshRenderer
 	void RegisterClass_MeshRenderer();
 	RegisterClass_MeshRenderer();
 
-	//50. GraphicsSettings
+	//51. GraphicsSettings
 	void RegisterClass_GraphicsSettings();
 	RegisterClass_GraphicsSettings();
-
-	//51. Rigidbody
-	void RegisterClass_Rigidbody();
-	RegisterClass_Rigidbody();
 
 	//52. PhysicsManager
 	void RegisterClass_PhysicsManager();

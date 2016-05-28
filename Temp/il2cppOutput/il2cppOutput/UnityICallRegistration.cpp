@@ -1,4 +1,4 @@
-//Generated on : 2016-05-28 11:23:27 AM
+//Generated on : 2016-05-28 2:59:29 PM
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AnimationCurve
@@ -1523,6 +1523,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Material_EnableKeyword();
 		Register_UnityEngine_Material_EnableKeyword();
 
+		//System.Void UnityEngine.Material::INTERNAL_CALL_GetColor(UnityEngine.Material,System.Int32,UnityEngine.Color&)
+		void Register_UnityEngine_Material_INTERNAL_CALL_GetColor();
+		Register_UnityEngine_Material_INTERNAL_CALL_GetColor();
+
 		//System.Void UnityEngine.Material::INTERNAL_CALL_SetColor(UnityEngine.Material,System.Int32,UnityEngine.Color&)
 		void Register_UnityEngine_Material_INTERNAL_CALL_SetColor();
 		Register_UnityEngine_Material_INTERNAL_CALL_SetColor();
@@ -2152,6 +2156,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Resources_Load();
 
 	//End Registrations for type : UnityEngine.Resources
+
+	//Start Registrations for type : UnityEngine.Rigidbody
+
+		//System.Void UnityEngine.Rigidbody::INTERNAL_CALL_AddForce(UnityEngine.Rigidbody,UnityEngine.Vector3&,UnityEngine.ForceMode)
+		void Register_UnityEngine_Rigidbody_INTERNAL_CALL_AddForce();
+		Register_UnityEngine_Rigidbody_INTERNAL_CALL_AddForce();
+
+	//End Registrations for type : UnityEngine.Rigidbody
 
 	//Start Registrations for type : UnityEngine.Screen
 

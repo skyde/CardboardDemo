@@ -1004,6 +1004,9 @@ static const Il2CppType* GenInst_IGvrGazePointer_t1822538814_0_0_0_Types[] = { &
 extern const Il2CppGenericInst GenInst_IGvrGazePointer_t1822538814_0_0_0 = { 1, GenInst_IGvrGazePointer_t1822538814_0_0_0_Types };
 static const Il2CppType* GenInst_IGvrGazePointer_t1822538814_0_0_0_Boolean_t211005341_0_0_0_Types[] = { &IGvrGazePointer_t1822538814_0_0_0, &Boolean_t211005341_0_0_0 };
 extern const Il2CppGenericInst GenInst_IGvrGazePointer_t1822538814_0_0_0_Boolean_t211005341_0_0_0 = { 2, GenInst_IGvrGazePointer_t1822538814_0_0_0_Boolean_t211005341_0_0_0_Types };
+extern const Il2CppType Renderer_t1092684080_0_0_0;
+static const Il2CppType* GenInst_Renderer_t1092684080_0_0_0_Types[] = { &Renderer_t1092684080_0_0_0 };
+extern const Il2CppGenericInst GenInst_Renderer_t1092684080_0_0_0 = { 1, GenInst_Renderer_t1092684080_0_0_0_Types };
 extern const Il2CppType IEnumerable_1_t2707313927_gp_0_0_0_0;
 static const Il2CppType* GenInst_IEnumerable_1_t2707313927_gp_0_0_0_0_Types[] = { &IEnumerable_1_t2707313927_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_IEnumerable_1_t2707313927_gp_0_0_0_0 = { 1, GenInst_IEnumerable_1_t2707313927_gp_0_0_0_0_Types };
@@ -1441,6 +1444,9 @@ extern const Il2CppGenericInst GenInst_GameObject_GetComponents_m311092670_gp_0_
 extern const Il2CppType GameObject_GetComponentsInChildren_m861782781_gp_0_0_0_0;
 static const Il2CppType* GenInst_GameObject_GetComponentsInChildren_m861782781_gp_0_0_0_0_Types[] = { &GameObject_GetComponentsInChildren_m861782781_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_GameObject_GetComponentsInChildren_m861782781_gp_0_0_0_0 = { 1, GenInst_GameObject_GetComponentsInChildren_m861782781_gp_0_0_0_0_Types };
+extern const Il2CppType GameObject_GetComponentsInChildren_m17928077_gp_0_0_0_0;
+static const Il2CppType* GenInst_GameObject_GetComponentsInChildren_m17928077_gp_0_0_0_0_Types[] = { &GameObject_GetComponentsInChildren_m17928077_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_GameObject_GetComponentsInChildren_m17928077_gp_0_0_0_0 = { 1, GenInst_GameObject_GetComponentsInChildren_m17928077_gp_0_0_0_0_Types };
 extern const Il2CppType GameObject_GetComponentsInParent_m494097074_gp_0_0_0_0;
 static const Il2CppType* GenInst_GameObject_GetComponentsInParent_m494097074_gp_0_0_0_0_Types[] = { &GameObject_GetComponentsInParent_m494097074_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_GameObject_GetComponentsInParent_m494097074_gp_0_0_0_0 = { 1, GenInst_GameObject_GetComponentsInParent_m494097074_gp_0_0_0_0_Types };
@@ -1663,9 +1669,6 @@ extern const Il2CppGenericInst GenInst_Animator_t792326996_0_0_0 = { 1, GenInst_
 extern const Il2CppType Direction_t1041377120_0_0_0;
 static const Il2CppType* GenInst_Direction_t1041377120_0_0_0_Types[] = { &Direction_t1041377120_0_0_0 };
 extern const Il2CppGenericInst GenInst_Direction_t1041377120_0_0_0 = { 1, GenInst_Direction_t1041377120_0_0_0_Types };
-extern const Il2CppType Renderer_t1092684080_0_0_0;
-static const Il2CppType* GenInst_Renderer_t1092684080_0_0_0_Types[] = { &Renderer_t1092684080_0_0_0 };
-extern const Il2CppGenericInst GenInst_Renderer_t1092684080_0_0_0 = { 1, GenInst_Renderer_t1092684080_0_0_0_Types };
 extern const Il2CppType EmulatorManager_t556192240_0_0_0;
 static const Il2CppType* GenInst_EmulatorManager_t556192240_0_0_0_Types[] = { &EmulatorManager_t556192240_0_0_0 };
 extern const Il2CppGenericInst GenInst_EmulatorManager_t556192240_0_0_0 = { 1, GenInst_EmulatorManager_t556192240_0_0_0_Types };
@@ -1702,6 +1705,12 @@ extern const Il2CppGenericInst GenInst_GvrPostRender_t3571076089_0_0_0 = { 1, Ge
 extern const Il2CppType Type_t2622299_0_0_0;
 static const Il2CppType* GenInst_Type_t2622299_0_0_0_Types[] = { &Type_t2622299_0_0_0 };
 extern const Il2CppGenericInst GenInst_Type_t2622299_0_0_0 = { 1, GenInst_Type_t2622299_0_0_0_Types };
+extern const Il2CppType DATA_Renderer_t475655640_0_0_0;
+static const Il2CppType* GenInst_DATA_Renderer_t475655640_0_0_0_Types[] = { &DATA_Renderer_t475655640_0_0_0 };
+extern const Il2CppGenericInst GenInst_DATA_Renderer_t475655640_0_0_0 = { 1, GenInst_DATA_Renderer_t475655640_0_0_0_Types };
+extern const Il2CppType Rigidbody_t1972007546_0_0_0;
+static const Il2CppType* GenInst_Rigidbody_t1972007546_0_0_0_Types[] = { &Rigidbody_t1972007546_0_0_0 };
+extern const Il2CppGenericInst GenInst_Rigidbody_t1972007546_0_0_0 = { 1, GenInst_Rigidbody_t1972007546_0_0_0_Types };
 static const Il2CppType* GenInst_Pointer_t1264047645_0_0_0_Pointer_t1264047645_0_0_0_Types[] = { &Pointer_t1264047645_0_0_0, &Pointer_t1264047645_0_0_0 };
 extern const Il2CppGenericInst GenInst_Pointer_t1264047645_0_0_0_Pointer_t1264047645_0_0_0 = { 2, GenInst_Pointer_t1264047645_0_0_0_Pointer_t1264047645_0_0_0_Types };
 static const Il2CppType* GenInst_CustomAttributeNamedArgument_t318735129_0_0_0_CustomAttributeNamedArgument_t318735129_0_0_0_Types[] = { &CustomAttributeNamedArgument_t318735129_0_0_0, &CustomAttributeNamedArgument_t318735129_0_0_0 };
@@ -1754,7 +1763,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2_t3312956448_0_0_0 = { 2, GenInst_KeyValuePair_2_t3312956448_0_0_0_KeyValuePair_2_t3312956448_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t3312956448_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t3312956448_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[608] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[611] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2847414787_0_0_0,
@@ -2102,6 +2111,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[608] =
 	&GenInst_MonoBehaviour_t3012272455_0_0_0_IGvrGazePointer_t1822538814_0_0_0,
 	&GenInst_IGvrGazePointer_t1822538814_0_0_0,
 	&GenInst_IGvrGazePointer_t1822538814_0_0_0_Boolean_t211005341_0_0_0,
+	&GenInst_Renderer_t1092684080_0_0_0,
 	&GenInst_IEnumerable_1_t2707313927_gp_0_0_0_0,
 	&GenInst_Array_InternalArray__IEnumerable_GetEnumerator_m850548632_gp_0_0_0_0,
 	&GenInst_Array_Sort_m1181603442_gp_0_0_0_0_Array_Sort_m1181603442_gp_0_0_0_0,
@@ -2249,6 +2259,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[608] =
 	&GenInst_GameObject_GetComponentInChildren_m426455346_gp_0_0_0_0,
 	&GenInst_GameObject_GetComponents_m311092670_gp_0_0_0_0,
 	&GenInst_GameObject_GetComponentsInChildren_m861782781_gp_0_0_0_0,
+	&GenInst_GameObject_GetComponentsInChildren_m17928077_gp_0_0_0_0,
 	&GenInst_GameObject_GetComponentsInParent_m494097074_gp_0_0_0_0,
 	&GenInst_InvokableCall_1_t567110278_gp_0_0_0_0,
 	&GenInst_InvokableCall_2_t567110279_gp_0_0_0_0_InvokableCall_2_t567110279_gp_1_0_0_0,
@@ -2325,7 +2336,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[608] =
 	&GenInst_AnimationTriggers_t513475400_0_0_0,
 	&GenInst_Animator_t792326996_0_0_0,
 	&GenInst_Direction_t1041377120_0_0_0,
-	&GenInst_Renderer_t1092684080_0_0_0,
 	&GenInst_EmulatorManager_t556192240_0_0_0,
 	&GenInst_EmulatorClientSocket_t665638443_0_0_0,
 	&GenInst_AudioSource_t3628549054_0_0_0,
@@ -2338,6 +2348,8 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[608] =
 	&GenInst_GvrPreRender_t2492587030_0_0_0,
 	&GenInst_GvrPostRender_t3571076089_0_0_0,
 	&GenInst_Type_t2622299_0_0_0,
+	&GenInst_DATA_Renderer_t475655640_0_0_0,
+	&GenInst_Rigidbody_t1972007546_0_0_0,
 	&GenInst_Pointer_t1264047645_0_0_0_Pointer_t1264047645_0_0_0,
 	&GenInst_CustomAttributeNamedArgument_t318735129_0_0_0_CustomAttributeNamedArgument_t318735129_0_0_0,
 	&GenInst_CustomAttributeTypedArgument_t560415562_0_0_0_CustomAttributeTypedArgument_t560415562_0_0_0,

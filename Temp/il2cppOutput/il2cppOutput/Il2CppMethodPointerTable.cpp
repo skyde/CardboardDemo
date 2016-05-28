@@ -8838,12 +8838,16 @@ extern "C" void Logger_LogFormat_m4050017187 ();
 extern "C" void Logger_LogException_m426775790 ();
 extern "C" void Material__ctor_m2685909642 ();
 extern "C" void Material__ctor_m2546967560 ();
+extern "C" void Material_get_color_m2268945527 ();
 extern "C" void Material_set_color_m3296857020 ();
 extern "C" void Material_get_mainTexture_m1012267054 ();
 extern "C" void Material_set_mainTexture_m3116438437 ();
 extern "C" void Material_SetColor_m1918430019 ();
 extern "C" void Material_SetColor_m54957808 ();
 extern "C" void Material_INTERNAL_CALL_SetColor_m3209011477 ();
+extern "C" void Material_GetColor_m1709543664 ();
+extern "C" void Material_GetColor_m317509027 ();
+extern "C" void Material_INTERNAL_CALL_GetColor_m3428345249 ();
 extern "C" void Material_SetTexture_m1833724755 ();
 extern "C" void Material_SetTexture_m3847256752 ();
 extern "C" void Material_GetTexture_m1284113328 ();
@@ -9243,6 +9247,8 @@ extern "C" void ResourceRequest__ctor_m2863879896 ();
 extern "C" void ResourceRequest_get_asset_m670320982 ();
 extern "C" void Resources_Load_m2187391845 ();
 extern "C" void Resources_Load_m3601699608 ();
+extern "C" void Rigidbody_AddForce_m3682301239 ();
+extern "C" void Rigidbody_INTERNAL_CALL_AddForce_m3651654387 ();
 extern "C" void RPC__ctor_m281827604 ();
 extern "C" void Screen_get_width_m3080333084 ();
 extern "C" void Screen_get_height_m1504859443 ();
@@ -11125,6 +11131,8 @@ extern "C" void ControllerDemoManager_SetSelectedObject_m973459535 ();
 extern "C" void ControllerDemoManager_StartDragging_m964285676 ();
 extern "C" void ControllerDemoManager_EndDragging_m730555557 ();
 extern "C" void ControllerDemoManager_UpdateStatusMessage_m114672711 ();
+extern "C" void DATA_Renderer__ctor_m3123873427 ();
+extern "C" void DATA_Renderer_Awake_m3361478646 ();
 extern "C" void FPS__ctor_m3522929858 ();
 extern "C" void FPS_Awake_m3760535077 ();
 extern "C" void FPS_LateUpdate_m3515633361 ();
@@ -12199,10 +12207,16 @@ extern "C" void Builder_ClearW_m3739655362 ();
 extern "C" void PhoneEvent__cctor_m3044999562 ();
 extern "C" void PhoneEvent_RegisterAllExtensions_m183129087 ();
 extern "C" void SCR_Character__ctor_m3699151839 ();
-extern "C" void SCR_Character_Start_m2646289631 ();
+extern "C" void SCR_Character_Awake_m3936757058 ();
 extern "C" void SCR_Character_Update_m436452110 ();
 extern "C" void SCR_Character_GotoViewPosition_m369450806 ();
 extern "C" void SCR_EditorPan__ctor_m4250483448 ();
+extern "C" void SCR_InteractiveObject__ctor_m4277942343 ();
+extern "C" void SCR_InteractiveObject_Awake_m220580266 ();
+extern "C" void SCR_InteractiveObject_SetGazedAt_m2001140516 ();
+extern "C" void SCR_InteractiveObject_OnGazeEnter_m1415313049 ();
+extern "C" void SCR_InteractiveObject_OnGazeExit_m1855690207 ();
+extern "C" void SCR_InteractiveObject_OnGazeTrigger_m3116817785 ();
 extern "C" void SCR_MoveTarget__ctor_m3136114236 ();
 extern "C" void SCR_MoveTarget_Update_m162155601 ();
 extern "C" void StereoController__ctor_m3477860167 ();
@@ -12246,7 +12260,7 @@ extern "C" void Teleport_TeleportRandomly_m2343013935 ();
 extern "C" void Teleport_OnGazeEnter_m2137174850 ();
 extern "C" void Teleport_OnGazeExit_m216408086 ();
 extern "C" void Teleport_OnGazeTrigger_m1041306594 ();
-extern const Il2CppMethodPointer g_MethodPointers[12235] = 
+extern const Il2CppMethodPointer g_MethodPointers[12249] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -21075,12 +21089,16 @@ extern const Il2CppMethodPointer g_MethodPointers[12235] =
 	Logger_LogException_m426775790,
 	Material__ctor_m2685909642,
 	Material__ctor_m2546967560,
+	Material_get_color_m2268945527,
 	Material_set_color_m3296857020,
 	Material_get_mainTexture_m1012267054,
 	Material_set_mainTexture_m3116438437,
 	Material_SetColor_m1918430019,
 	Material_SetColor_m54957808,
 	Material_INTERNAL_CALL_SetColor_m3209011477,
+	Material_GetColor_m1709543664,
+	Material_GetColor_m317509027,
+	Material_INTERNAL_CALL_GetColor_m3428345249,
 	Material_SetTexture_m1833724755,
 	Material_SetTexture_m3847256752,
 	Material_GetTexture_m1284113328,
@@ -21480,6 +21498,8 @@ extern const Il2CppMethodPointer g_MethodPointers[12235] =
 	ResourceRequest_get_asset_m670320982,
 	Resources_Load_m2187391845,
 	Resources_Load_m3601699608,
+	Rigidbody_AddForce_m3682301239,
+	Rigidbody_INTERNAL_CALL_AddForce_m3651654387,
 	RPC__ctor_m281827604,
 	Screen_get_width_m3080333084,
 	Screen_get_height_m1504859443,
@@ -23362,6 +23382,8 @@ extern const Il2CppMethodPointer g_MethodPointers[12235] =
 	ControllerDemoManager_StartDragging_m964285676,
 	ControllerDemoManager_EndDragging_m730555557,
 	ControllerDemoManager_UpdateStatusMessage_m114672711,
+	DATA_Renderer__ctor_m3123873427,
+	DATA_Renderer_Awake_m3361478646,
 	FPS__ctor_m3522929858,
 	FPS_Awake_m3760535077,
 	FPS_LateUpdate_m3515633361,
@@ -24436,10 +24458,16 @@ extern const Il2CppMethodPointer g_MethodPointers[12235] =
 	PhoneEvent__cctor_m3044999562,
 	PhoneEvent_RegisterAllExtensions_m183129087,
 	SCR_Character__ctor_m3699151839,
-	SCR_Character_Start_m2646289631,
+	SCR_Character_Awake_m3936757058,
 	SCR_Character_Update_m436452110,
 	SCR_Character_GotoViewPosition_m369450806,
 	SCR_EditorPan__ctor_m4250483448,
+	SCR_InteractiveObject__ctor_m4277942343,
+	SCR_InteractiveObject_Awake_m220580266,
+	SCR_InteractiveObject_SetGazedAt_m2001140516,
+	SCR_InteractiveObject_OnGazeEnter_m1415313049,
+	SCR_InteractiveObject_OnGazeExit_m1855690207,
+	SCR_InteractiveObject_OnGazeTrigger_m3116817785,
 	SCR_MoveTarget__ctor_m3136114236,
 	SCR_MoveTarget_Update_m162155601,
 	StereoController__ctor_m3477860167,

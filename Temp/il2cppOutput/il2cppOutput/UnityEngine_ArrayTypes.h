@@ -78,6 +78,8 @@ struct CanvasGroup_t1295922228;
 struct RectTransform_t3317474837;
 // UnityEngine.MonoBehaviour
 struct MonoBehaviour_t3012272455;
+// UnityEngine.Renderer
+struct Renderer_t1092684080;
 
 #include "mscorlib_System_Array2840145358.h"
 #include "UnityEngine_UnityEngine_Object3878351788.h"
@@ -126,6 +128,7 @@ struct MonoBehaviour_t3012272455;
 #include "UnityEngine_UnityEngine_CanvasGroup1295922228.h"
 #include "UnityEngine_UnityEngine_RectTransform3317474837.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "UnityEngine_UnityEngine_Renderer1092684080.h"
 
 #pragma once
 // UnityEngine.Object[]
@@ -857,6 +860,21 @@ public:
 	inline MonoBehaviour_t3012272455 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline MonoBehaviour_t3012272455 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, MonoBehaviour_t3012272455 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.Renderer[]
+struct RendererU5BU5D_t3623042065  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Renderer_t1092684080 * m_Items[1];
+
+public:
+	inline Renderer_t1092684080 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Renderer_t1092684080 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Renderer_t1092684080 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

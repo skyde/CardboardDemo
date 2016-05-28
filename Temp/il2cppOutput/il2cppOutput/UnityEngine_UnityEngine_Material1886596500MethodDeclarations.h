@@ -32,6 +32,8 @@ struct String_t;
 extern "C"  void Material__ctor_m2685909642 (Material_t1886596500 * __this, Shader_t3998140498 * ___shader0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::.ctor(UnityEngine.Material)
 extern "C"  void Material__ctor_m2546967560 (Material_t1886596500 * __this, Material_t1886596500 * ___source0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Material::get_color()
+extern "C"  Color_t1588175760  Material_get_color_m2268945527 (Material_t1886596500 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::set_color(UnityEngine.Color)
 extern "C"  void Material_set_color_m3296857020 (Material_t1886596500 * __this, Color_t1588175760  ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture UnityEngine.Material::get_mainTexture()
@@ -44,6 +46,12 @@ extern "C"  void Material_SetColor_m1918430019 (Material_t1886596500 * __this, S
 extern "C"  void Material_SetColor_m54957808 (Material_t1886596500 * __this, int32_t ___nameID0, Color_t1588175760  ___color1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::INTERNAL_CALL_SetColor(UnityEngine.Material,System.Int32,UnityEngine.Color&)
 extern "C"  void Material_INTERNAL_CALL_SetColor_m3209011477 (Il2CppObject * __this /* static, unused */, Material_t1886596500 * ___self0, int32_t ___nameID1, Color_t1588175760 * ___color2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Material::GetColor(System.String)
+extern "C"  Color_t1588175760  Material_GetColor_m1709543664 (Material_t1886596500 * __this, String_t* ___propertyName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Material::GetColor(System.Int32)
+extern "C"  Color_t1588175760  Material_GetColor_m317509027 (Material_t1886596500 * __this, int32_t ___nameID0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::INTERNAL_CALL_GetColor(UnityEngine.Material,System.Int32,UnityEngine.Color&)
+extern "C"  void Material_INTERNAL_CALL_GetColor_m3428345249 (Il2CppObject * __this /* static, unused */, Material_t1886596500 * ___self0, int32_t ___nameID1, Color_t1588175760 * ___value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetTexture(System.String,UnityEngine.Texture)
 extern "C"  void Material_SetTexture_m1833724755 (Material_t1886596500 * __this, String_t* ___propertyName0, Texture_t1769722184 * ___texture1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetTexture(System.Int32,UnityEngine.Texture)

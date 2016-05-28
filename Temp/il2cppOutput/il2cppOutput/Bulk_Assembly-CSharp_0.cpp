@@ -27,6 +27,8 @@ struct ControllerDemoManager_t1306021614;
 struct GameObject_t4012695102;
 // UnityEngine.Renderer
 struct Renderer_t1092684080;
+// DATA_Renderer
+struct DATA_Renderer_t475655640;
 // FPS
 struct FPS_t69833;
 // GazeInputModule
@@ -275,6 +277,12 @@ struct Builder_t1895597947;
 struct SCR_Character_t2234088204;
 // SCR_EditorPan
 struct SCR_EditorPan_t3113534419;
+// SCR_InteractiveObject
+struct SCR_InteractiveObject_t3425393060;
+// UnityEngine.Renderer[]
+struct RendererU5BU5D_t3623042065;
+// UnityEngine.Rigidbody
+struct Rigidbody_t1972007546;
 // SCR_MoveTarget
 struct SCR_MoveTarget_t2017391935;
 // GvrEye[]
@@ -346,6 +354,9 @@ struct Teleport_t2999409483;
 #include "UnityEngine_UnityEngine_Color1588175760MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Graphic933884113MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color1588175760.h"
+#include "AssemblyU2DCSharp_DATA_Renderer475655640.h"
+#include "AssemblyU2DCSharp_DATA_Renderer475655640MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Material1886596500MethodDeclarations.h"
 #include "AssemblyU2DCSharp_FPS69833.h"
 #include "AssemblyU2DCSharp_FPS69833MethodDeclarations.h"
 #include "AssemblyU2DCSharp_GvrViewer671349045MethodDeclarations.h"
@@ -598,7 +609,6 @@ struct Teleport_t2999409483;
 #include "mscorlib_System_Runtime_CompilerServices_RuntimeHe1695827251MethodDeclarations.h"
 #include "mscorlib_System_RuntimeFieldHandle3184214143.h"
 #include "UnityEngine_UnityEngine_CameraClearFlags3602484652.h"
-#include "UnityEngine_UnityEngine_Material1886596500MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Shader3998140498.h"
 #include "UnityEngine_UnityEngine_Graphics1688236792MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Texture1769722184.h"
@@ -720,6 +730,10 @@ struct Teleport_t2999409483;
 #include "AssemblyU2DCSharp_SCR_MoveTarget2017391935.h"
 #include "AssemblyU2DCSharp_SCR_EditorPan3113534419.h"
 #include "AssemblyU2DCSharp_SCR_EditorPan3113534419MethodDeclarations.h"
+#include "AssemblyU2DCSharp_SCR_InteractiveObject3425393060.h"
+#include "AssemblyU2DCSharp_SCR_InteractiveObject3425393060MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rigidbody1972007546MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 #include "AssemblyU2DCSharp_SCR_MoveTarget2017391935MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen4111588415MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen4111588415.h"
@@ -742,6 +756,8 @@ extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_g
 #define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Renderer>()
 #define GameObject_GetComponent_TisRenderer_t1092684080_m4102086307(__this, method) ((  Renderer_t1092684080 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.Renderer>()
+#define Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, method) ((  Renderer_t1092684080 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // UnityEngine.GameObject UnityEngine.EventSystems.ExecuteEvents::GetEventHandler<System.Object>(UnityEngine.GameObject)
 extern "C"  GameObject_t4012695102 * ExecuteEvents_GetEventHandler_TisIl2CppObject_m2285942506_gshared (Il2CppObject * __this /* static, unused */, GameObject_t4012695102 * p0, const MethodInfo* method);
 #define ExecuteEvents_GetEventHandler_TisIl2CppObject_m2285942506(__this /* static, unused */, p0, method) ((  GameObject_t4012695102 * (*) (Il2CppObject * /* static, unused */, GameObject_t4012695102 *, const MethodInfo*))ExecuteEvents_GetEventHandler_TisIl2CppObject_m2285942506_gshared)(__this /* static, unused */, p0, method)
@@ -871,6 +887,17 @@ extern "C"  void ICodedInputStream_ReadMessageArray_TisIl2CppObject_m76733358_gs
 #define ICodedInputStream_ReadMessageArray_TisIl2CppObject_m76733358(__this, p0, p1, p2, p3, p4, method) ((  void (*) (Il2CppObject *, uint32_t, String_t*, Il2CppObject*, Il2CppObject *, ExtensionRegistry_t1909229278 *, const MethodInfo*))ICodedInputStream_ReadMessageArray_TisIl2CppObject_m76733358_gshared)(__this, p0, p1, p2, p3, p4, method)
 // System.Void Google.ProtocolBuffers.ICodedInputStream::ReadMessageArray<proto.PhoneEvent/Types/MotionEvent/Types/Pointer>(System.UInt32,System.String,System.Collections.Generic.ICollection`1<!!0>,!!0,Google.ProtocolBuffers.ExtensionRegistry)
 #define ICodedInputStream_ReadMessageArray_TisPointer_t1264047646_m1771033171(__this, p0, p1, p2, p3, p4, method) ((  void (*) (Il2CppObject *, uint32_t, String_t*, Il2CppObject*, Pointer_t1264047646 *, ExtensionRegistry_t1909229278 *, const MethodInfo*))ICodedInputStream_ReadMessageArray_TisIl2CppObject_m76733358_gshared)(__this, p0, p1, p2, p3, p4, method)
+// !!0[] UnityEngine.GameObject::GetComponentsInChildren<System.Object>()
+extern "C"  ObjectU5BU5D_t11523773* GameObject_GetComponentsInChildren_TisIl2CppObject_m3418406430_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_GetComponentsInChildren_TisIl2CppObject_m3418406430(__this, method) ((  ObjectU5BU5D_t11523773* (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m3418406430_gshared)(__this, method)
+// !!0[] UnityEngine.GameObject::GetComponentsInChildren<UnityEngine.Renderer>()
+#define GameObject_GetComponentsInChildren_TisRenderer_t1092684080_m3112293608(__this, method) ((  RendererU5BU5D_t3623042065* (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m3418406430_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<DATA_Renderer>()
+#define GameObject_AddComponent_TisDATA_Renderer_t475655640_m1247574548(__this, method) ((  DATA_Renderer_t475655640 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<DATA_Renderer>()
+#define GameObject_GetComponent_TisDATA_Renderer_t475655640_m3357403273(__this, method) ((  DATA_Renderer_t475655640 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.Rigidbody>()
+#define Component_GetComponent_TisRigidbody_t1972007546_m2174365699(__this, method) ((  Rigidbody_t1972007546 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0[] UnityEngine.Component::GetComponentsInChildren<System.Object>(System.Boolean)
 extern "C"  ObjectU5BU5D_t11523773* Component_GetComponentsInChildren_TisIl2CppObject_m1896280001_gshared (Component_t2126946602 * __this, bool p0, const MethodInfo* method);
 #define Component_GetComponentsInChildren_TisIl2CppObject_m1896280001(__this, p0, method) ((  ObjectU5BU5D_t11523773* (*) (Component_t2126946602 *, bool, const MethodInfo*))Component_GetComponentsInChildren_TisIl2CppObject_m1896280001_gshared)(__this, p0, method)
@@ -898,8 +925,6 @@ extern "C"  bool Enumerable_Any_TisIl2CppObject_m3411867191_gshared (Il2CppObjec
 #define GameObject_AddComponent_TisCamera_t3533968274_m4213885974(__this, method) ((  Camera_t3533968274 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<GvrEye>()
 #define GameObject_AddComponent_TisGvrEye_t2145111534_m2366247044(__this, method) ((  GvrEye_t2145111534 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
-// !!0 UnityEngine.Component::GetComponent<UnityEngine.Renderer>()
-#define Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, method) ((  Renderer_t1092684080 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -2084,6 +2109,35 @@ IL_0104:
 
 IL_0122:
 	{
+		return;
+	}
+}
+// System.Void DATA_Renderer::.ctor()
+extern "C"  void DATA_Renderer__ctor_m3123873427 (DATA_Renderer_t475655640 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void DATA_Renderer::Awake()
+extern const MethodInfo* Component_GetComponent_TisRenderer_t1092684080_m500377675_MethodInfo_var;
+extern const uint32_t DATA_Renderer_Awake_m3361478646_MetadataUsageId;
+extern "C"  void DATA_Renderer_Awake_m3361478646 (DATA_Renderer_t475655640 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DATA_Renderer_Awake_m3361478646_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Renderer_t1092684080 * L_0 = Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m500377675_MethodInfo_var);
+		NullCheck(L_0);
+		Material_t1886596500 * L_1 = Renderer_get_material_m2720864603(L_0, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Color_t1588175760  L_2 = Material_get_color_m2268945527(L_1, /*hidden argument*/NULL);
+		__this->set_InitalColor_2(L_2);
 		return;
 	}
 }
@@ -37875,15 +37929,24 @@ extern "C"  void PhoneEvent_RegisterAllExtensions_m183129087 (Il2CppObject * __t
 extern "C"  void SCR_Character__ctor_m3699151839 (SCR_Character_t2234088204 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_Speed_5((1.0f));
+		__this->set_Speed_6((1.0f));
 		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Void SCR_Character::Start()
-extern "C"  void SCR_Character_Start_m2646289631 (SCR_Character_t2234088204 * __this, const MethodInfo* method)
+// System.Void SCR_Character::Awake()
+extern Il2CppClass* SCR_Character_t2234088204_il2cpp_TypeInfo_var;
+extern const uint32_t SCR_Character_Awake_m3936757058_MetadataUsageId;
+extern "C"  void SCR_Character_Awake_m3936757058 (SCR_Character_t2234088204 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
 	{
+		il2cpp_codegen_initialize_method (SCR_Character_Awake_m3936757058_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		((SCR_Character_t2234088204_StaticFields*)SCR_Character_t2234088204_il2cpp_TypeInfo_var->static_fields)->set_Instance_2(__this);
 		return;
 	}
 }
@@ -37899,7 +37962,7 @@ extern "C"  void SCR_Character_Update_m436452110 (SCR_Character_t2234088204 * __
 	Vector3_t3525329789  V_3;
 	memset(&V_3, 0, sizeof(V_3));
 	{
-		SCR_MoveTarget_t2017391935 * L_0 = __this->get_Target_3();
+		SCR_MoveTarget_t2017391935 * L_0 = __this->get_Target_4();
 		NullCheck(L_0);
 		bool L_1 = L_0->get_Active_3();
 		if (!L_1)
@@ -37908,7 +37971,7 @@ extern "C"  void SCR_Character_Update_m436452110 (SCR_Character_t2234088204 * __
 		}
 	}
 	{
-		SCR_MoveTarget_t2017391935 * L_2 = __this->get_Target_3();
+		SCR_MoveTarget_t2017391935 * L_2 = __this->get_Target_4();
 		NullCheck(L_2);
 		Transform_t284553113 * L_3 = Component_get_transform_m4257140443(L_2, /*hidden argument*/NULL);
 		NullCheck(L_3);
@@ -37920,7 +37983,7 @@ extern "C"  void SCR_Character_Update_m436452110 (SCR_Character_t2234088204 * __
 		Vector3_t3525329789  L_7 = Transform_get_position_m2211398607(L_6, /*hidden argument*/NULL);
 		V_2 = L_7;
 		float L_8 = (&V_2)->get_y_2();
-		SCR_MoveTarget_t2017391935 * L_9 = __this->get_Target_3();
+		SCR_MoveTarget_t2017391935 * L_9 = __this->get_Target_4();
 		NullCheck(L_9);
 		Transform_t284553113 * L_10 = Component_get_transform_m4257140443(L_9, /*hidden argument*/NULL);
 		NullCheck(L_10);
@@ -37934,8 +37997,8 @@ extern "C"  void SCR_Character_Update_m436452110 (SCR_Character_t2234088204 * __
 		Vector3_t3525329789  L_15 = Transform_get_position_m2211398607(L_14, /*hidden argument*/NULL);
 		Vector3_t3525329789  L_16 = V_0;
 		float L_17 = Time_get_smoothDeltaTime_m1119418976(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_18 = __this->get_Speed_5();
-		Vector3_t3525329789  L_19 = Vector3_MoveTowards_m2405650085(NULL /*static, unused*/, L_15, L_16, ((float)((float)((float)((float)L_17*(float)L_18))*(float)(2.0f))), /*hidden argument*/NULL);
+		float L_18 = __this->get_Speed_6();
+		Vector3_t3525329789  L_19 = Vector3_MoveTowards_m2405650085(NULL /*static, unused*/, L_15, L_16, ((float)((float)((float)((float)L_17*(float)L_18))*(float)(3.0f))), /*hidden argument*/NULL);
 		NullCheck(L_13);
 		Transform_set_position_m3111394108(L_13, L_19, /*hidden argument*/NULL);
 	}
@@ -37953,7 +38016,7 @@ extern "C"  void SCR_Character_GotoViewPosition_m369450806 (SCR_Character_t22340
 	RaycastHit_t46221527  V_1;
 	memset(&V_1, 0, sizeof(V_1));
 	{
-		GvrHead_t2074018243 * L_0 = __this->get_Head_4();
+		GvrHead_t2074018243 * L_0 = __this->get_Head_5();
 		NullCheck(L_0);
 		Ray_t1522967639  L_1 = GvrHead_get_Gaze_m2115332650(L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
@@ -37965,10 +38028,10 @@ extern "C"  void SCR_Character_GotoViewPosition_m369450806 (SCR_Character_t22340
 		}
 	}
 	{
-		SCR_MoveTarget_t2017391935 * L_4 = __this->get_Target_3();
+		SCR_MoveTarget_t2017391935 * L_4 = __this->get_Target_4();
 		NullCheck(L_4);
 		L_4->set_Active_3((bool)1);
-		SCR_MoveTarget_t2017391935 * L_5 = __this->get_Target_3();
+		SCR_MoveTarget_t2017391935 * L_5 = __this->get_Target_4();
 		NullCheck(L_5);
 		Transform_t284553113 * L_6 = Component_get_transform_m4257140443(L_5, /*hidden argument*/NULL);
 		Vector3_t3525329789  L_7 = RaycastHit_get_point_m4165497838((&V_1), /*hidden argument*/NULL);
@@ -37986,6 +38049,220 @@ extern "C"  void SCR_EditorPan__ctor_m4250483448 (SCR_EditorPan_t3113534419 * __
 {
 	{
 		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SCR_InteractiveObject::.ctor()
+extern "C"  void SCR_InteractiveObject__ctor_m4277942343 (SCR_InteractiveObject_t3425393060 * __this, const MethodInfo* method)
+{
+	{
+		Color_t1588175760  L_0 = Color_get_green_m2005284533(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_HighlightColor_3(L_0);
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SCR_InteractiveObject::Awake()
+extern const MethodInfo* GameObject_GetComponentsInChildren_TisRenderer_t1092684080_m3112293608_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisDATA_Renderer_t475655640_m1247574548_MethodInfo_var;
+extern const uint32_t SCR_InteractiveObject_Awake_m220580266_MetadataUsageId;
+extern "C"  void SCR_InteractiveObject_Awake_m220580266 (SCR_InteractiveObject_t3425393060 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (SCR_InteractiveObject_Awake_m220580266_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Renderer_t1092684080 * V_0 = NULL;
+	RendererU5BU5D_t3623042065* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		RendererU5BU5D_t3623042065* L_1 = GameObject_GetComponentsInChildren_TisRenderer_t1092684080_m3112293608(L_0, /*hidden argument*/GameObject_GetComponentsInChildren_TisRenderer_t1092684080_m3112293608_MethodInfo_var);
+		__this->set_Renderers_2(L_1);
+		RendererU5BU5D_t3623042065* L_2 = __this->get_Renderers_2();
+		V_1 = L_2;
+		V_2 = 0;
+		goto IL_0033;
+	}
+
+IL_001f:
+	{
+		RendererU5BU5D_t3623042065* L_3 = V_1;
+		int32_t L_4 = V_2;
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
+		int32_t L_5 = L_4;
+		V_0 = ((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5)));
+		Renderer_t1092684080 * L_6 = V_0;
+		NullCheck(L_6);
+		GameObject_t4012695102 * L_7 = Component_get_gameObject_m1170635899(L_6, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		GameObject_AddComponent_TisDATA_Renderer_t475655640_m1247574548(L_7, /*hidden argument*/GameObject_AddComponent_TisDATA_Renderer_t475655640_m1247574548_MethodInfo_var);
+		int32_t L_8 = V_2;
+		V_2 = ((int32_t)((int32_t)L_8+(int32_t)1));
+	}
+
+IL_0033:
+	{
+		int32_t L_9 = V_2;
+		RendererU5BU5D_t3623042065* L_10 = V_1;
+		NullCheck(L_10);
+		if ((((int32_t)L_9) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_10)->max_length)))))))
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void SCR_InteractiveObject::SetGazedAt(System.Boolean)
+extern const MethodInfo* GameObject_GetComponent_TisDATA_Renderer_t475655640_m3357403273_MethodInfo_var;
+extern const uint32_t SCR_InteractiveObject_SetGazedAt_m2001140516_MetadataUsageId;
+extern "C"  void SCR_InteractiveObject_SetGazedAt_m2001140516 (SCR_InteractiveObject_t3425393060 * __this, bool ___gazedAt0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (SCR_InteractiveObject_SetGazedAt_m2001140516_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Renderer_t1092684080 * V_0 = NULL;
+	RendererU5BU5D_t3623042065* V_1 = NULL;
+	int32_t V_2 = 0;
+	Material_t1886596500 * G_B3_0 = NULL;
+	Material_t1886596500 * G_B2_0 = NULL;
+	Color_t1588175760  G_B4_0;
+	memset(&G_B4_0, 0, sizeof(G_B4_0));
+	Material_t1886596500 * G_B4_1 = NULL;
+	{
+		RendererU5BU5D_t3623042065* L_0 = __this->get_Renderers_2();
+		V_1 = L_0;
+		V_2 = 0;
+		goto IL_0042;
+	}
+
+IL_000e:
+	{
+		RendererU5BU5D_t3623042065* L_1 = V_1;
+		int32_t L_2 = V_2;
+		NullCheck(L_1);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_2);
+		int32_t L_3 = L_2;
+		V_0 = ((L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3)));
+		Renderer_t1092684080 * L_4 = V_0;
+		NullCheck(L_4);
+		Material_t1886596500 * L_5 = Renderer_get_material_m2720864603(L_4, /*hidden argument*/NULL);
+		bool L_6 = ___gazedAt0;
+		G_B2_0 = L_5;
+		if (!L_6)
+		{
+			G_B3_0 = L_5;
+			goto IL_0029;
+		}
+	}
+	{
+		Color_t1588175760  L_7 = __this->get_HighlightColor_3();
+		G_B4_0 = L_7;
+		G_B4_1 = G_B2_0;
+		goto IL_0039;
+	}
+
+IL_0029:
+	{
+		Renderer_t1092684080 * L_8 = V_0;
+		NullCheck(L_8);
+		GameObject_t4012695102 * L_9 = Component_get_gameObject_m1170635899(L_8, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		DATA_Renderer_t475655640 * L_10 = GameObject_GetComponent_TisDATA_Renderer_t475655640_m3357403273(L_9, /*hidden argument*/GameObject_GetComponent_TisDATA_Renderer_t475655640_m3357403273_MethodInfo_var);
+		NullCheck(L_10);
+		Color_t1588175760  L_11 = L_10->get_InitalColor_2();
+		G_B4_0 = L_11;
+		G_B4_1 = G_B3_0;
+	}
+
+IL_0039:
+	{
+		NullCheck(G_B4_1);
+		Material_set_color_m3296857020(G_B4_1, G_B4_0, /*hidden argument*/NULL);
+		int32_t L_12 = V_2;
+		V_2 = ((int32_t)((int32_t)L_12+(int32_t)1));
+	}
+
+IL_0042:
+	{
+		int32_t L_13 = V_2;
+		RendererU5BU5D_t3623042065* L_14 = V_1;
+		NullCheck(L_14);
+		if ((((int32_t)L_13) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_14)->max_length)))))))
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void SCR_InteractiveObject::OnGazeEnter()
+extern "C"  void SCR_InteractiveObject_OnGazeEnter_m1415313049 (SCR_InteractiveObject_t3425393060 * __this, const MethodInfo* method)
+{
+	{
+		SCR_InteractiveObject_SetGazedAt_m2001140516(__this, (bool)1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SCR_InteractiveObject::OnGazeExit()
+extern "C"  void SCR_InteractiveObject_OnGazeExit_m1855690207 (SCR_InteractiveObject_t3425393060 * __this, const MethodInfo* method)
+{
+	{
+		SCR_InteractiveObject_SetGazedAt_m2001140516(__this, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SCR_InteractiveObject::OnGazeTrigger()
+extern Il2CppClass* SCR_Character_t2234088204_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisRigidbody_t1972007546_m2174365699_MethodInfo_var;
+extern const uint32_t SCR_InteractiveObject_OnGazeTrigger_m3116817785_MetadataUsageId;
+extern "C"  void SCR_InteractiveObject_OnGazeTrigger_m3116817785 (SCR_InteractiveObject_t3425393060 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (SCR_InteractiveObject_OnGazeTrigger_m3116817785_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Rigidbody_t1972007546 * V_0 = NULL;
+	Ray_t1522967639  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Rigidbody_t1972007546 * L_0 = Component_GetComponent_TisRigidbody_t1972007546_m2174365699(__this, /*hidden argument*/Component_GetComponent_TisRigidbody_t1972007546_m2174365699_MethodInfo_var);
+		V_0 = L_0;
+		Rigidbody_t1972007546 * L_1 = V_0;
+		bool L_2 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		Rigidbody_t1972007546 * L_3 = V_0;
+		SCR_Character_t2234088204 * L_4 = ((SCR_Character_t2234088204_StaticFields*)SCR_Character_t2234088204_il2cpp_TypeInfo_var->static_fields)->get_Instance_2();
+		NullCheck(L_4);
+		GvrHead_t2074018243 * L_5 = L_4->get_Head_5();
+		NullCheck(L_5);
+		Ray_t1522967639  L_6 = GvrHead_get_Gaze_m2115332650(L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		Vector3_t3525329789  L_7 = Ray_get_direction_m3201866877((&V_1), /*hidden argument*/NULL);
+		Vector3_t3525329789  L_8 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_7, (700.0f), /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Rigidbody_AddForce_m3682301239(L_3, L_8, /*hidden argument*/NULL);
+	}
+
+IL_0039:
+	{
 		return;
 	}
 }
@@ -39060,41 +39337,56 @@ extern "C"  void Teleport_SetGazedAt_m3782990107 (Teleport_t2999409483 * __this,
 		il2cpp_codegen_initialize_method (Teleport_SetGazedAt_m3782990107_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
+	Renderer_t1092684080 * V_0 = NULL;
+	Material_t1886596500 * G_B3_0 = NULL;
 	Material_t1886596500 * G_B2_0 = NULL;
-	Material_t1886596500 * G_B1_0 = NULL;
-	Color_t1588175760  G_B3_0;
-	memset(&G_B3_0, 0, sizeof(G_B3_0));
-	Material_t1886596500 * G_B3_1 = NULL;
+	Color_t1588175760  G_B4_0;
+	memset(&G_B4_0, 0, sizeof(G_B4_0));
+	Material_t1886596500 * G_B4_1 = NULL;
 	{
 		Renderer_t1092684080 * L_0 = Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m500377675_MethodInfo_var);
-		NullCheck(L_0);
-		Material_t1886596500 * L_1 = Renderer_get_material_m2720864603(L_0, /*hidden argument*/NULL);
-		bool L_2 = ___gazedAt0;
-		G_B1_0 = L_1;
+		V_0 = L_0;
+		Renderer_t1092684080 * L_1 = V_0;
+		bool L_2 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 		if (!L_2)
 		{
-			G_B2_0 = L_1;
-			goto IL_001b;
+			goto IL_0032;
 		}
 	}
 	{
-		Color_t1588175760  L_3 = Color_get_green_m2005284533(NULL /*static, unused*/, /*hidden argument*/NULL);
-		G_B3_0 = L_3;
-		G_B3_1 = G_B1_0;
-		goto IL_0020;
+		Renderer_t1092684080 * L_3 = V_0;
+		NullCheck(L_3);
+		Material_t1886596500 * L_4 = Renderer_get_material_m2720864603(L_3, /*hidden argument*/NULL);
+		bool L_5 = ___gazedAt0;
+		G_B2_0 = L_4;
+		if (!L_5)
+		{
+			G_B3_0 = L_4;
+			goto IL_0028;
+		}
+	}
+	{
+		Color_t1588175760  L_6 = Color_get_green_m2005284533(NULL /*static, unused*/, /*hidden argument*/NULL);
+		G_B4_0 = L_6;
+		G_B4_1 = G_B2_0;
+		goto IL_002d;
 	}
 
-IL_001b:
+IL_0028:
 	{
-		Color_t1588175760  L_4 = Color_get_red_m4288945411(NULL /*static, unused*/, /*hidden argument*/NULL);
-		G_B3_0 = L_4;
-		G_B3_1 = G_B2_0;
+		Color_t1588175760  L_7 = Color_get_red_m4288945411(NULL /*static, unused*/, /*hidden argument*/NULL);
+		G_B4_0 = L_7;
+		G_B4_1 = G_B3_0;
 	}
 
-IL_0020:
+IL_002d:
 	{
-		NullCheck(G_B3_1);
-		Material_set_color_m3296857020(G_B3_1, G_B3_0, /*hidden argument*/NULL);
+		NullCheck(G_B4_1);
+		Material_set_color_m3296857020(G_B4_1, G_B4_0, /*hidden argument*/NULL);
+	}
+
+IL_0032:
+	{
 		return;
 	}
 }

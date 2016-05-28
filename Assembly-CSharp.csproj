@@ -89,6 +89,8 @@
      <Compile Include="Assets\Scripts\SCR_Character.cs" />
      <Compile Include="Assets\Scripts\SCR_EditorPan.cs" />
      <Compile Include="Assets\Scripts\SCR_InteractiveObject.cs" />
+     <Compile Include="Assets\Scripts\SCR_LatticeJoint.cs" />
+     <Compile Include="Assets\Scripts\SCR_LatticePoint.cs" />
      <Compile Include="Assets\Scripts\SCR_MoveTarget.cs" />
      <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
      <None Include="Assets\GoogleVR\Resources\UnlitTexture.shader" />
