@@ -9511,6 +9511,7 @@ extern "C" void Time_get_time_m342192902 ();
 extern "C" void Time_get_deltaTime_m2741110510 ();
 extern "C" void Time_get_unscaledTime_m319114521 ();
 extern "C" void Time_get_unscaledDeltaTime_m285638843 ();
+extern "C" void Time_get_smoothDeltaTime_m1119418976 ();
 extern "C" void Time_get_frameCount_m3434184975 ();
 extern "C" void Time_get_realtimeSinceStartup_m2972554983 ();
 extern "C" void TooltipAttribute__ctor_m3341446606 ();
@@ -12195,6 +12196,11 @@ extern "C" void Builder_SetW_m601426558 ();
 extern "C" void Builder_ClearW_m3739655362 ();
 extern "C" void PhoneEvent__cctor_m3044999562 ();
 extern "C" void PhoneEvent_RegisterAllExtensions_m183129087 ();
+extern "C" void SCR_Character__ctor_m3699151839 ();
+extern "C" void SCR_Character_Start_m2646289631 ();
+extern "C" void SCR_Character_Update_m436452110 ();
+extern "C" void SCR_Character_OnDown_m186379110 ();
+extern "C" void SCR_Character_OnUp_m1766059999 ();
 extern "C" void StereoController__ctor_m3477860167 ();
 extern "C" void StereoController_get_Eyes_m3398665077 ();
 extern "C" void StereoController_get_Head_m1091666358 ();
@@ -12236,7 +12242,7 @@ extern "C" void Teleport_TeleportRandomly_m2343013935 ();
 extern "C" void Teleport_OnGazeEnter_m2137174850 ();
 extern "C" void Teleport_OnGazeExit_m216408086 ();
 extern "C" void Teleport_OnGazeTrigger_m1041306594 ();
-extern const Il2CppMethodPointer g_MethodPointers[12225] = 
+extern const Il2CppMethodPointer g_MethodPointers[12231] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -21738,6 +21744,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12225] =
 	Time_get_deltaTime_m2741110510,
 	Time_get_unscaledTime_m319114521,
 	Time_get_unscaledDeltaTime_m285638843,
+	Time_get_smoothDeltaTime_m1119418976,
 	Time_get_frameCount_m3434184975,
 	Time_get_realtimeSinceStartup_m2972554983,
 	TooltipAttribute__ctor_m3341446606,
@@ -24422,6 +24429,11 @@ extern const Il2CppMethodPointer g_MethodPointers[12225] =
 	Builder_ClearW_m3739655362,
 	PhoneEvent__cctor_m3044999562,
 	PhoneEvent_RegisterAllExtensions_m183129087,
+	SCR_Character__ctor_m3699151839,
+	SCR_Character_Start_m2646289631,
+	SCR_Character_Update_m436452110,
+	SCR_Character_OnDown_m186379110,
+	SCR_Character_OnUp_m1766059999,
 	StereoController__ctor_m3477860167,
 	StereoController_get_Eyes_m3398665077,
 	StereoController_get_Head_m1091666358,

@@ -54,6 +54,11 @@ public static class GvrAudio {
 #if !UNITY_EDITOR && UNITY_ANDROID
       SetApplicationState();
 #endif
+			// TODO: remove this
+		#if UNITY_EDITOR
+		return;
+		#endif
+
       // Initialize the audio system.
       AudioConfiguration config = AudioSettings.GetConfiguration();
       sampleRate = config.sampleRate;

@@ -1,4 +1,4 @@
-//Generated on : 2016-05-27 3:23:47 PM
+//Generated on : 2016-05-28 9:40:21 AM
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AnimationCurve
@@ -2470,6 +2470,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Time::get_realtimeSinceStartup()
 		void Register_UnityEngine_Time_get_realtimeSinceStartup();
 		Register_UnityEngine_Time_get_realtimeSinceStartup();
+
+		//System.Single UnityEngine.Time::get_smoothDeltaTime()
+		void Register_UnityEngine_Time_get_smoothDeltaTime();
+		Register_UnityEngine_Time_get_smoothDeltaTime();
 
 		//System.Single UnityEngine.Time::get_time()
 		void Register_UnityEngine_Time_get_time();

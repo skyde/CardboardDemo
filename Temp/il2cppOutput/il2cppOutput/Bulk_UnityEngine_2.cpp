@@ -6994,6 +6994,15 @@ extern "C"  float Time_get_unscaledDeltaTime_m285638843 (Il2CppObject * __this /
 	_il2cpp_icall_func = (Time_get_unscaledDeltaTime_m285638843_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_unscaledDeltaTime()");
 	return _il2cpp_icall_func();
 }
+// System.Single UnityEngine.Time::get_smoothDeltaTime()
+extern "C"  float Time_get_smoothDeltaTime_m1119418976 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef float (*Time_get_smoothDeltaTime_m1119418976_ftn) ();
+	static Time_get_smoothDeltaTime_m1119418976_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Time_get_smoothDeltaTime_m1119418976_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_smoothDeltaTime()");
+	return _il2cpp_icall_func();
+}
 // System.Int32 UnityEngine.Time::get_frameCount()
 extern "C"  int32_t Time_get_frameCount_m3434184975 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
