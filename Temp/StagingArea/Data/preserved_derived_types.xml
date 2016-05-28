@@ -21,6 +21,7 @@
 <type fullname="StereoRenderEffect" preserve="all"/>
 <type fullname="GvrGaze" preserve="all"/>
 <type fullname="GvrReticle" preserve="all"/>
+<type fullname="SCR_EditorPan" preserve="all"/>
 <type fullname="SCR_Character" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">

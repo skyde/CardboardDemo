@@ -1614,6 +1614,7 @@
 #include "AssemblyU2DCSharp_GvrHead_HeadUpdatedDelegate3342363968.h"
 #include "AssemblyU2DCSharp_GvrViewer_StereoScreenChangeDele4234461465.h"
 #include "AssemblyU2DCSharp_MutablePose3D1273683304.h"
+#include "AssemblyU2DCSharp_SCR_EditorPan3113534419.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874523.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874490.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874515.h"
@@ -10933,7 +10934,7 @@ extern const int32_t g_FieldOffsetTable[9302] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1843] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1844] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -12773,6 +12774,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1843] =
 	sizeof (BaseVRDevice_t864282971), -1, sizeof(BaseVRDevice_t864282971_StaticFields), 0,
 	sizeof (GvrDevice_t1224326321), -1, 0, 0,
 	sizeof (iOSDevice_t3202447355), -1, 0, 0,
+	sizeof (SCR_EditorPan_t3113534419), -1, 0, 0,
 	sizeof (SCR_Character_t2234088204), -1, 0, 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238938), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields), 0,
 	sizeof (U24ArrayTypeU2428_t214874523)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2428_t214874523_marshaled_pinvoke), 0, 0,

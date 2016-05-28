@@ -12201,6 +12201,7 @@ extern "C" void SCR_Character_Start_m2646289631 ();
 extern "C" void SCR_Character_Update_m436452110 ();
 extern "C" void SCR_Character_OnDown_m186379110 ();
 extern "C" void SCR_Character_OnUp_m1766059999 ();
+extern "C" void SCR_EditorPan__ctor_m4250483448 ();
 extern "C" void StereoController__ctor_m3477860167 ();
 extern "C" void StereoController_get_Eyes_m3398665077 ();
 extern "C" void StereoController_get_Head_m1091666358 ();
@@ -12242,7 +12243,7 @@ extern "C" void Teleport_TeleportRandomly_m2343013935 ();
 extern "C" void Teleport_OnGazeEnter_m2137174850 ();
 extern "C" void Teleport_OnGazeExit_m216408086 ();
 extern "C" void Teleport_OnGazeTrigger_m1041306594 ();
-extern const Il2CppMethodPointer g_MethodPointers[12231] = 
+extern const Il2CppMethodPointer g_MethodPointers[12232] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -24434,6 +24435,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12231] =
 	SCR_Character_Update_m436452110,
 	SCR_Character_OnDown_m186379110,
 	SCR_Character_OnUp_m1766059999,
+	SCR_EditorPan__ctor_m4250483448,
 	StereoController__ctor_m3477860167,
 	StereoController_get_Eyes_m3398665077,
 	StereoController_get_Head_m1091666358,

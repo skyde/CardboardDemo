@@ -21819,12 +21819,12 @@ static void GvrAudioSource_t2139450958_CustomAttributesCacheGenerator_sourceMute
 static void GvrAudioSource_t2139450958_CustomAttributesCacheGenerator_sourcePitch(CustomAttributesCache* cache)
 {
 	{
-		RangeAttribute_t587322956 * tmp = (RangeAttribute_t587322956 *)cache->attributes[0];
-		RangeAttribute__ctor_m1279576482(tmp, -3.0f, 3.0f, NULL);
+		SerializeField_t3430139495 * tmp = (SerializeField_t3430139495 *)cache->attributes[0];
+		SerializeField__ctor_m4068807987(tmp, NULL);
 	}
 	{
-		SerializeField_t3430139495 * tmp = (SerializeField_t3430139495 *)cache->attributes[1];
-		SerializeField__ctor_m4068807987(tmp, NULL);
+		RangeAttribute_t587322956 * tmp = (RangeAttribute_t587322956 *)cache->attributes[1];
+		RangeAttribute__ctor_m1279576482(tmp, -3.0f, 3.0f, NULL);
 	}
 }
 static void GvrAudioSource_t2139450958_CustomAttributesCacheGenerator_sourceVolume(CustomAttributesCache* cache)
@@ -22003,12 +22003,12 @@ static void PhoneEvent_t2487257186_CustomAttributesCacheGenerator(CustomAttribut
 static void PhoneEvent_t2801000292_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
-		DebuggerNonUserCodeAttribute_t2112284407 * tmp = (DebuggerNonUserCodeAttribute_t2112284407 *)cache->attributes[0];
-		DebuggerNonUserCodeAttribute__ctor_m896114299(tmp, NULL);
+		CompilerGeneratedAttribute_t853953138 * tmp = (CompilerGeneratedAttribute_t853953138 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m2546676106(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t853953138 * tmp = (CompilerGeneratedAttribute_t853953138 *)cache->attributes[1];
-		CompilerGeneratedAttribute__ctor_m2546676106(tmp, NULL);
+		DebuggerNonUserCodeAttribute_t2112284407 * tmp = (DebuggerNonUserCodeAttribute_t2112284407 *)cache->attributes[1];
+		DebuggerNonUserCodeAttribute__ctor_m896114299(tmp, NULL);
 	}
 	{
 		GeneratedCodeAttribute_t785805933 * tmp = (GeneratedCodeAttribute_t785805933 *)cache->attributes[2];
@@ -22213,21 +22213,6 @@ static void OrientationEvent_t756413130_CustomAttributesCacheGenerator(CustomAtt
 		DebuggerNonUserCodeAttribute__ctor_m896114299(tmp, NULL);
 	}
 	{
-		GeneratedCodeAttribute_t785805933 * tmp = (GeneratedCodeAttribute_t785805933 *)cache->attributes[1];
-		GeneratedCodeAttribute__ctor_m3690080601(tmp, il2cpp_codegen_string_new_wrapper("ProtoGen"), il2cpp_codegen_string_new_wrapper("2.4.1.473"), NULL);
-	}
-	{
-		CompilerGeneratedAttribute_t853953138 * tmp = (CompilerGeneratedAttribute_t853953138 *)cache->attributes[2];
-		CompilerGeneratedAttribute__ctor_m2546676106(tmp, NULL);
-	}
-}
-static void Builder_t1895597952_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
-{
-	{
-		DebuggerNonUserCodeAttribute_t2112284407 * tmp = (DebuggerNonUserCodeAttribute_t2112284407 *)cache->attributes[0];
-		DebuggerNonUserCodeAttribute__ctor_m896114299(tmp, NULL);
-	}
-	{
 		CompilerGeneratedAttribute_t853953138 * tmp = (CompilerGeneratedAttribute_t853953138 *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m2546676106(tmp, NULL);
 	}
@@ -22236,22 +22221,22 @@ static void Builder_t1895597952_CustomAttributesCacheGenerator(CustomAttributesC
 		GeneratedCodeAttribute__ctor_m3690080601(tmp, il2cpp_codegen_string_new_wrapper("ProtoGen"), il2cpp_codegen_string_new_wrapper("2.4.1.473"), NULL);
 	}
 }
-static void KeyEvent_t541813659_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+static void Builder_t1895597952_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
-		DebuggerNonUserCodeAttribute_t2112284407 * tmp = (DebuggerNonUserCodeAttribute_t2112284407 *)cache->attributes[0];
-		DebuggerNonUserCodeAttribute__ctor_m896114299(tmp, NULL);
+		GeneratedCodeAttribute_t785805933 * tmp = (GeneratedCodeAttribute_t785805933 *)cache->attributes[0];
+		GeneratedCodeAttribute__ctor_m3690080601(tmp, il2cpp_codegen_string_new_wrapper("ProtoGen"), il2cpp_codegen_string_new_wrapper("2.4.1.473"), NULL);
 	}
 	{
-		GeneratedCodeAttribute_t785805933 * tmp = (GeneratedCodeAttribute_t785805933 *)cache->attributes[1];
-		GeneratedCodeAttribute__ctor_m3690080601(tmp, il2cpp_codegen_string_new_wrapper("ProtoGen"), il2cpp_codegen_string_new_wrapper("2.4.1.473"), NULL);
+		DebuggerNonUserCodeAttribute_t2112284407 * tmp = (DebuggerNonUserCodeAttribute_t2112284407 *)cache->attributes[1];
+		DebuggerNonUserCodeAttribute__ctor_m896114299(tmp, NULL);
 	}
 	{
 		CompilerGeneratedAttribute_t853953138 * tmp = (CompilerGeneratedAttribute_t853953138 *)cache->attributes[2];
 		CompilerGeneratedAttribute__ctor_m2546676106(tmp, NULL);
 	}
 }
-static void Builder_t1895597953_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+static void KeyEvent_t541813659_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
 		GeneratedCodeAttribute_t785805933 * tmp = (GeneratedCodeAttribute_t785805933 *)cache->attributes[0];
@@ -22266,19 +22251,34 @@ static void Builder_t1895597953_CustomAttributesCacheGenerator(CustomAttributesC
 		DebuggerNonUserCodeAttribute__ctor_m896114299(tmp, NULL);
 	}
 }
-static void Builder_t1895597954_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+static void Builder_t1895597953_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
-		GeneratedCodeAttribute_t785805933 * tmp = (GeneratedCodeAttribute_t785805933 *)cache->attributes[0];
-		GeneratedCodeAttribute__ctor_m3690080601(tmp, il2cpp_codegen_string_new_wrapper("ProtoGen"), il2cpp_codegen_string_new_wrapper("2.4.1.473"), NULL);
+		CompilerGeneratedAttribute_t853953138 * tmp = (CompilerGeneratedAttribute_t853953138 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m2546676106(tmp, NULL);
 	}
 	{
 		DebuggerNonUserCodeAttribute_t2112284407 * tmp = (DebuggerNonUserCodeAttribute_t2112284407 *)cache->attributes[1];
 		DebuggerNonUserCodeAttribute__ctor_m896114299(tmp, NULL);
 	}
 	{
-		CompilerGeneratedAttribute_t853953138 * tmp = (CompilerGeneratedAttribute_t853953138 *)cache->attributes[2];
+		GeneratedCodeAttribute_t785805933 * tmp = (GeneratedCodeAttribute_t785805933 *)cache->attributes[2];
+		GeneratedCodeAttribute__ctor_m3690080601(tmp, il2cpp_codegen_string_new_wrapper("ProtoGen"), il2cpp_codegen_string_new_wrapper("2.4.1.473"), NULL);
+	}
+}
+static void Builder_t1895597954_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+{
+	{
+		DebuggerNonUserCodeAttribute_t2112284407 * tmp = (DebuggerNonUserCodeAttribute_t2112284407 *)cache->attributes[0];
+		DebuggerNonUserCodeAttribute__ctor_m896114299(tmp, NULL);
+	}
+	{
+		CompilerGeneratedAttribute_t853953138 * tmp = (CompilerGeneratedAttribute_t853953138 *)cache->attributes[1];
 		CompilerGeneratedAttribute__ctor_m2546676106(tmp, NULL);
+	}
+	{
+		GeneratedCodeAttribute_t785805933 * tmp = (GeneratedCodeAttribute_t785805933 *)cache->attributes[2];
+		GeneratedCodeAttribute__ctor_m3690080601(tmp, il2cpp_codegen_string_new_wrapper("ProtoGen"), il2cpp_codegen_string_new_wrapper("2.4.1.473"), NULL);
 	}
 }
 static void GazeInputModule_t2064533489_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -22320,12 +22320,12 @@ static void GvrEye_t2145111534_CustomAttributesCacheGenerator(CustomAttributesCa
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		AddComponentMenu_t2323189064 * tmp = (AddComponentMenu_t2323189064 *)cache->attributes[0];
-		AddComponentMenu__ctor_m1521317712(tmp, il2cpp_codegen_string_new_wrapper("GoogleVR/GvrEye"), NULL);
+		RequireComponent_t3196495237 * tmp = (RequireComponent_t3196495237 *)cache->attributes[0];
+		RequireComponent__ctor_m2023271172(tmp, il2cpp_codegen_type_get_object(Camera_t3533968274_0_0_0_var), NULL);
 	}
 	{
-		RequireComponent_t3196495237 * tmp = (RequireComponent_t3196495237 *)cache->attributes[1];
-		RequireComponent__ctor_m2023271172(tmp, il2cpp_codegen_type_get_object(Camera_t3533968274_0_0_0_var), NULL);
+		AddComponentMenu_t2323189064 * tmp = (AddComponentMenu_t2323189064 *)cache->attributes[1];
+		AddComponentMenu__ctor_m1521317712(tmp, il2cpp_codegen_string_new_wrapper("GoogleVR/GvrEye"), NULL);
 	}
 }
 static void GvrEye_t2145111534_CustomAttributesCacheGenerator_toggleCullingMask(CustomAttributesCache* cache)
@@ -22760,12 +22760,12 @@ static void StereoController_t1637909972_CustomAttributesCacheGenerator_matchMon
 static void StereoController_t1637909972_CustomAttributesCacheGenerator_matchByZoom(CustomAttributesCache* cache)
 {
 	{
-		RangeAttribute_t587322956 * tmp = (RangeAttribute_t587322956 *)cache->attributes[0];
-		RangeAttribute__ctor_m1279576482(tmp, 0.0f, 1.0f, NULL);
+		TooltipAttribute_t3386766918 * tmp = (TooltipAttribute_t3386766918 *)cache->attributes[0];
+		TooltipAttribute__ctor_m3341446606(tmp, il2cpp_codegen_string_new_wrapper("Whether to adjust FOV by moving the eyes (0) or simply zooming (1)."), NULL);
 	}
 	{
-		TooltipAttribute_t3386766918 * tmp = (TooltipAttribute_t3386766918 *)cache->attributes[1];
-		TooltipAttribute__ctor_m3341446606(tmp, il2cpp_codegen_string_new_wrapper("Whether to adjust FOV by moving the eyes (0) or simply zooming (1)."), NULL);
+		RangeAttribute_t587322956 * tmp = (RangeAttribute_t587322956 *)cache->attributes[1];
+		RangeAttribute__ctor_m1279576482(tmp, 0.0f, 1.0f, NULL);
 	}
 }
 static void StereoController_t1637909972_CustomAttributesCacheGenerator_centerOfInterest(CustomAttributesCache* cache)
@@ -23029,12 +23029,12 @@ static void GvrReticle_t4275820913_CustomAttributesCacheGenerator(CustomAttribut
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		AddComponentMenu_t2323189064 * tmp = (AddComponentMenu_t2323189064 *)cache->attributes[0];
-		AddComponentMenu__ctor_m1521317712(tmp, il2cpp_codegen_string_new_wrapper("GoogleVR/UI/GvrReticle"), NULL);
+		RequireComponent_t3196495237 * tmp = (RequireComponent_t3196495237 *)cache->attributes[0];
+		RequireComponent__ctor_m2023271172(tmp, il2cpp_codegen_type_get_object(Renderer_t1092684080_0_0_0_var), NULL);
 	}
 	{
-		RequireComponent_t3196495237 * tmp = (RequireComponent_t3196495237 *)cache->attributes[1];
-		RequireComponent__ctor_m2023271172(tmp, il2cpp_codegen_type_get_object(Renderer_t1092684080_0_0_0_var), NULL);
+		AddComponentMenu_t2323189064 * tmp = (AddComponentMenu_t2323189064 *)cache->attributes[1];
+		AddComponentMenu__ctor_m1521317712(tmp, il2cpp_codegen_string_new_wrapper("GoogleVR/UI/GvrReticle"), NULL);
 	}
 }
 static void BaseVRDevice_t864282971_CustomAttributesCacheGenerator_U3CProfileU3Ek__BackingField(CustomAttributesCache* cache)

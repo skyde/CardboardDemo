@@ -273,6 +273,8 @@ struct IPopsicleList_1_t968268526;
 struct Builder_t1895597947;
 // SCR_Character
 struct SCR_Character_t2234088204;
+// SCR_EditorPan
+struct SCR_EditorPan_t3113534419;
 // GvrEye[]
 struct GvrEyeU5BU5D_t2613429915;
 // System.Collections.Generic.IEnumerable`1<GvrEye>
@@ -713,6 +715,8 @@ struct Teleport_t2999409483;
 #include "AssemblyU2DCSharp_proto_PhoneEvent_Types_Type2622298MethodDeclarations.h"
 #include "AssemblyU2DCSharp_SCR_Character2234088204.h"
 #include "AssemblyU2DCSharp_SCR_Character2234088204MethodDeclarations.h"
+#include "AssemblyU2DCSharp_SCR_EditorPan3113534419.h"
+#include "AssemblyU2DCSharp_SCR_EditorPan3113534419MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen4111588415MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen4111588415.h"
 #include "System_Core_System_Func_2_gen1679634021MethodDeclarations.h"
@@ -37879,8 +37883,16 @@ extern "C"  void SCR_Character_Start_m2646289631 (SCR_Character_t2234088204 * __
 	}
 }
 // System.Void SCR_Character::Update()
+extern Il2CppClass* GvrViewer_t671349045_il2cpp_TypeInfo_var;
+extern const uint32_t SCR_Character_Update_m436452110_MetadataUsageId;
 extern "C"  void SCR_Character_Update_m436452110 (SCR_Character_t2234088204 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (SCR_Character_Update_m436452110_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
 	float V_0 = 0.0f;
 	Vector3_t3525329789  V_1;
 	memset(&V_1, 0, sizeof(V_1));
@@ -37889,53 +37901,69 @@ extern "C"  void SCR_Character_Update_m436452110 (SCR_Character_t2234088204 * __
 	Vector3_t3525329789  V_3;
 	memset(&V_3, 0, sizeof(V_3));
 	{
-		bool L_0 = __this->get_Moving_3();
-		if (!L_0)
+		IL2CPP_RUNTIME_CLASS_INIT(GvrViewer_t671349045_il2cpp_TypeInfo_var);
+		GvrViewer_t671349045 * L_0 = GvrViewer_get_Instance_m3566439310(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_1 = GvrViewer_get_Triggered_m895829718(L_0, /*hidden argument*/NULL);
+		if (!L_1)
 		{
-			goto IL_0086;
+			goto IL_001e;
 		}
 	}
 	{
-		Transform_t284553113 * L_1 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_1);
-		Vector3_t3525329789  L_2 = Transform_get_position_m2211398607(L_1, /*hidden argument*/NULL);
-		V_1 = L_2;
-		float L_3 = (&V_1)->get_y_2();
-		V_0 = L_3;
-		Transform_t284553113 * L_4 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Transform_t284553113 * L_5 = L_4;
-		NullCheck(L_5);
-		Vector3_t3525329789  L_6 = Transform_get_position_m2211398607(L_5, /*hidden argument*/NULL);
-		Transform_t284553113 * L_7 = __this->get_ViewDirection_2();
-		NullCheck(L_7);
-		Transform_t284553113 * L_8 = Component_get_transform_m4257140443(L_7, /*hidden argument*/NULL);
-		NullCheck(L_8);
-		Vector3_t3525329789  L_9 = Transform_get_forward_m877665793(L_8, /*hidden argument*/NULL);
-		float L_10 = Time_get_smoothDeltaTime_m1119418976(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_11 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_9, L_10, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_12 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_6, L_11, /*hidden argument*/NULL);
-		NullCheck(L_5);
-		Transform_set_position_m3111394108(L_5, L_12, /*hidden argument*/NULL);
-		Transform_t284553113 * L_13 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Transform_t284553113 * L_14 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_14);
-		Vector3_t3525329789  L_15 = Transform_get_position_m2211398607(L_14, /*hidden argument*/NULL);
-		V_2 = L_15;
-		float L_16 = (&V_2)->get_x_1();
-		float L_17 = V_0;
-		Transform_t284553113 * L_18 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_18);
-		Vector3_t3525329789  L_19 = Transform_get_position_m2211398607(L_18, /*hidden argument*/NULL);
-		V_3 = L_19;
-		float L_20 = (&V_3)->get_z_3();
-		Vector3_t3525329789  L_21;
-		memset(&L_21, 0, sizeof(L_21));
-		Vector3__ctor_m2926210380(&L_21, L_16, L_17, L_20, /*hidden argument*/NULL);
-		NullCheck(L_13);
-		Transform_set_position_m3111394108(L_13, L_21, /*hidden argument*/NULL);
+		bool L_2 = __this->get_Moving_3();
+		__this->set_Moving_3((bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0));
 	}
 
-IL_0086:
+IL_001e:
+	{
+		bool L_3 = __this->get_Moving_3();
+		if (!L_3)
+		{
+			goto IL_00a4;
+		}
+	}
+	{
+		Transform_t284553113 * L_4 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t3525329789  L_5 = Transform_get_position_m2211398607(L_4, /*hidden argument*/NULL);
+		V_1 = L_5;
+		float L_6 = (&V_1)->get_y_2();
+		V_0 = L_6;
+		Transform_t284553113 * L_7 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Transform_t284553113 * L_8 = L_7;
+		NullCheck(L_8);
+		Vector3_t3525329789  L_9 = Transform_get_position_m2211398607(L_8, /*hidden argument*/NULL);
+		Transform_t284553113 * L_10 = __this->get_ViewDirection_2();
+		NullCheck(L_10);
+		Transform_t284553113 * L_11 = Component_get_transform_m4257140443(L_10, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		Vector3_t3525329789  L_12 = Transform_get_forward_m877665793(L_11, /*hidden argument*/NULL);
+		float L_13 = Time_get_smoothDeltaTime_m1119418976(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_14 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_12, L_13, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_15 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_9, L_14, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Transform_set_position_m3111394108(L_8, L_15, /*hidden argument*/NULL);
+		Transform_t284553113 * L_16 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Transform_t284553113 * L_17 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		Vector3_t3525329789  L_18 = Transform_get_position_m2211398607(L_17, /*hidden argument*/NULL);
+		V_2 = L_18;
+		float L_19 = (&V_2)->get_x_1();
+		float L_20 = V_0;
+		Transform_t284553113 * L_21 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		Vector3_t3525329789  L_22 = Transform_get_position_m2211398607(L_21, /*hidden argument*/NULL);
+		V_3 = L_22;
+		float L_23 = (&V_3)->get_z_3();
+		Vector3_t3525329789  L_24;
+		memset(&L_24, 0, sizeof(L_24));
+		Vector3__ctor_m2926210380(&L_24, L_19, L_20, L_23, /*hidden argument*/NULL);
+		NullCheck(L_16);
+		Transform_set_position_m3111394108(L_16, L_24, /*hidden argument*/NULL);
+	}
+
+IL_00a4:
 	{
 		return;
 	}
@@ -37953,6 +37981,14 @@ extern "C"  void SCR_Character_OnUp_m1766059999 (SCR_Character_t2234088204 * __t
 {
 	{
 		__this->set_Moving_3((bool)0);
+		return;
+	}
+}
+// System.Void SCR_EditorPan::.ctor()
+extern "C"  void SCR_EditorPan__ctor_m4250483448 (SCR_EditorPan_t3113534419 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
