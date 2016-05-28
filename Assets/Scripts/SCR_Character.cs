@@ -3,6 +3,8 @@ using System.Collections;
 
 public class SCR_Character : MonoBehaviour
 {
+	public static SCR_Character Instance;
+
 	public Transform ViewDirection;
 
 //	public bool Moving = false;
@@ -12,9 +14,9 @@ public class SCR_Character : MonoBehaviour
 
 	public float Speed = 1;
 
-	public void Start ()
+	public void Awake ()
 	{
-	
+		Instance = this;
 	}
 	
 	public void Update ()
@@ -32,7 +34,7 @@ public class SCR_Character : MonoBehaviour
 
 			//ViewDirection.transform.forward
 
-			transform.position = Vector3.MoveTowards(transform.position, target, Time.smoothDeltaTime * Speed * 2F);
+			transform.position = Vector3.MoveTowards(transform.position, target, Time.smoothDeltaTime * Speed * 3F);
 
 //			transform.position = ;
 		}

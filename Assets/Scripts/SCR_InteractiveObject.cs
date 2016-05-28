@@ -43,6 +43,13 @@ public class SCR_InteractiveObject : MonoBehaviour
 
 	public void OnGazeTrigger ()
 	{
-//		TeleportRandomly ();
+		var body = GetComponent<Rigidbody>();
+
+		if(body)
+		{
+			print(body);
+
+			body.AddForce(SCR_Character.Instance.Head.Gaze.direction * 700);
+		}
 	}
 }
