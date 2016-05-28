@@ -9145,6 +9145,52 @@ extern "C"  Vector3_t3525329789  Vector3_Lerp_m650470329 (Il2CppObject * __this 
 		return L_14;
 	}
 }
+// UnityEngine.Vector3 UnityEngine.Vector3::MoveTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+extern "C"  Vector3_t3525329789  Vector3_MoveTowards_m2405650085 (Il2CppObject * __this /* static, unused */, Vector3_t3525329789  ___current0, Vector3_t3525329789  ___target1, float ___maxDistanceDelta2, const MethodInfo* method)
+{
+	Vector3_t3525329789  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	{
+		Vector3_t3525329789  L_0 = ___target1;
+		Vector3_t3525329789  L_1 = ___current0;
+		Vector3_t3525329789  L_2 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		float L_3 = Vector3_get_magnitude_m989985786((&V_0), /*hidden argument*/NULL);
+		V_1 = L_3;
+		float L_4 = V_1;
+		float L_5 = ___maxDistanceDelta2;
+		if ((((float)L_4) <= ((float)L_5)))
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		float L_6 = V_1;
+		if ((!(((float)L_6) == ((float)(0.0f)))))
+		{
+			goto IL_0024;
+		}
+	}
+
+IL_0022:
+	{
+		Vector3_t3525329789  L_7 = ___target1;
+		return L_7;
+	}
+
+IL_0024:
+	{
+		Vector3_t3525329789  L_8 = ___current0;
+		Vector3_t3525329789  L_9 = V_0;
+		float L_10 = V_1;
+		Vector3_t3525329789  L_11 = Vector3_op_Division_m4277988370(NULL /*static, unused*/, L_9, L_10, /*hidden argument*/NULL);
+		float L_12 = ___maxDistanceDelta2;
+		Vector3_t3525329789  L_13 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_11, L_12, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_14 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_8, L_13, /*hidden argument*/NULL);
+		return L_14;
+	}
+}
 // System.Single UnityEngine.Vector3::get_Item(System.Int32)
 extern Il2CppClass* IndexOutOfRangeException_t3760259642_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral965278184;

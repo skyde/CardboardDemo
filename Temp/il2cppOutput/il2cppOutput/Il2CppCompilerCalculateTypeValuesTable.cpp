@@ -1167,6 +1167,7 @@
 #include "AssemblyU2DCSharp_Gvr_Internal_GvrDevice1224326321.h"
 #include "AssemblyU2DCSharp_Gvr_Internal_iOSDevice3202447355.h"
 #include "AssemblyU2DCSharp_SCR_Character2234088204.h"
+#include "AssemblyU2DCSharp_SCR_MoveTarget2017391935.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
 #include "mscorlib_System_Object837106420.h"
@@ -1626,7 +1627,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9302] = 
+extern const int32_t g_FieldOffsetTable[9307] = 
 {
 	0,
 	0,
@@ -10923,7 +10924,12 @@ extern const int32_t g_FieldOffsetTable[9302] =
 	GvrDevice_t1224326321::get_offset_of_debugDisableNativeUILayer_33(),
 	iOSDevice_t3202447355::get_offset_of_isOpenGL_34(),
 	SCR_Character_t2234088204::get_offset_of_ViewDirection_2(),
-	SCR_Character_t2234088204::get_offset_of_Moving_3(),
+	SCR_Character_t2234088204::get_offset_of_Target_3(),
+	SCR_Character_t2234088204::get_offset_of_Head_4(),
+	SCR_Character_t2234088204::get_offset_of_Speed_5(),
+	SCR_MoveTarget_t2017391935::get_offset_of_Character_2(),
+	SCR_MoveTarget_t2017391935::get_offset_of_Active_3(),
+	SCR_MoveTarget_t2017391935::get_offset_of_Graphic_4(),
 	U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
 	U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields::get_offset_of_U24U24fieldU2D1_1(),
 	U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields::get_offset_of_U24U24fieldU2D2_2(),
@@ -10934,7 +10940,7 @@ extern const int32_t g_FieldOffsetTable[9302] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1844] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -12774,8 +12780,9 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1844] =
 	sizeof (BaseVRDevice_t864282971), -1, sizeof(BaseVRDevice_t864282971_StaticFields), 0,
 	sizeof (GvrDevice_t1224326321), -1, 0, 0,
 	sizeof (iOSDevice_t3202447355), -1, 0, 0,
-	sizeof (SCR_EditorPan_t3113534419), -1, 0, 0,
 	sizeof (SCR_Character_t2234088204), -1, 0, 0,
+	sizeof (SCR_EditorPan_t3113534419), -1, 0, 0,
+	sizeof (SCR_MoveTarget_t2017391935), -1, 0, 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238938), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields), 0,
 	sizeof (U24ArrayTypeU2428_t214874523)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2428_t214874523_marshaled_pinvoke), 0, 0,
 	sizeof (U24ArrayTypeU2416_t214874492)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2416_t214874492_marshaled_pinvoke), 0, 0,

@@ -27,6 +27,8 @@ extern "C"  void Vector3__ctor_m2926210380 (Vector3_t3525329789 * __this, float 
 extern "C"  void Vector3__ctor_m1846874791 (Vector3_t3525329789 * __this, float ___x0, float ___y1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern "C"  Vector3_t3525329789  Vector3_Lerp_m650470329 (Il2CppObject * __this /* static, unused */, Vector3_t3525329789  ___a0, Vector3_t3525329789  ___b1, float ___t2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector3::MoveTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+extern "C"  Vector3_t3525329789  Vector3_MoveTowards_m2405650085 (Il2CppObject * __this /* static, unused */, Vector3_t3525329789  ___current0, Vector3_t3525329789  ___target1, float ___maxDistanceDelta2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Vector3::get_Item(System.Int32)
 extern "C"  float Vector3_get_Item_m108333500 (Vector3_t3525329789 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Vector3::set_Item(System.Int32,System.Single)

@@ -9042,6 +9042,7 @@ extern "C" void Object_op_Inequality_m1296218211 ();
 extern "C" void Physics_Raycast_m2482317716 ();
 extern "C" void Physics_Raycast_m1758069759 ();
 extern "C" void Physics_Raycast_m1600345803 ();
+extern "C" void Physics_Raycast_m1343340263 ();
 extern "C" void Physics_Raycast_m165875788 ();
 extern "C" void Physics_RaycastAll_m1771931441 ();
 extern "C" void Physics_RaycastAll_m1269007794 ();
@@ -9618,6 +9619,7 @@ extern "C" void Vector2_op_Implicit_m482286037 ();
 extern "C" void Vector3__ctor_m2926210380 ();
 extern "C" void Vector3__ctor_m1846874791 ();
 extern "C" void Vector3_Lerp_m650470329 ();
+extern "C" void Vector3_MoveTowards_m2405650085 ();
 extern "C" void Vector3_get_Item_m108333500 ();
 extern "C" void Vector3_set_Item_m1844835745 ();
 extern "C" void Vector3_Scale_m3746402337 ();
@@ -12199,9 +12201,10 @@ extern "C" void PhoneEvent_RegisterAllExtensions_m183129087 ();
 extern "C" void SCR_Character__ctor_m3699151839 ();
 extern "C" void SCR_Character_Start_m2646289631 ();
 extern "C" void SCR_Character_Update_m436452110 ();
-extern "C" void SCR_Character_OnDown_m186379110 ();
-extern "C" void SCR_Character_OnUp_m1766059999 ();
+extern "C" void SCR_Character_GotoViewPosition_m369450806 ();
 extern "C" void SCR_EditorPan__ctor_m4250483448 ();
+extern "C" void SCR_MoveTarget__ctor_m3136114236 ();
+extern "C" void SCR_MoveTarget_Update_m162155601 ();
 extern "C" void StereoController__ctor_m3477860167 ();
 extern "C" void StereoController_get_Eyes_m3398665077 ();
 extern "C" void StereoController_get_Head_m1091666358 ();
@@ -12243,7 +12246,7 @@ extern "C" void Teleport_TeleportRandomly_m2343013935 ();
 extern "C" void Teleport_OnGazeEnter_m2137174850 ();
 extern "C" void Teleport_OnGazeExit_m216408086 ();
 extern "C" void Teleport_OnGazeTrigger_m1041306594 ();
-extern const Il2CppMethodPointer g_MethodPointers[12232] = 
+extern const Il2CppMethodPointer g_MethodPointers[12235] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -21276,6 +21279,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12232] =
 	Physics_Raycast_m2482317716,
 	Physics_Raycast_m1758069759,
 	Physics_Raycast_m1600345803,
+	Physics_Raycast_m1343340263,
 	Physics_Raycast_m165875788,
 	Physics_RaycastAll_m1771931441,
 	Physics_RaycastAll_m1269007794,
@@ -21852,6 +21856,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12232] =
 	Vector3__ctor_m2926210380,
 	Vector3__ctor_m1846874791,
 	Vector3_Lerp_m650470329,
+	Vector3_MoveTowards_m2405650085,
 	Vector3_get_Item_m108333500,
 	Vector3_set_Item_m1844835745,
 	Vector3_Scale_m3746402337,
@@ -24433,9 +24438,10 @@ extern const Il2CppMethodPointer g_MethodPointers[12232] =
 	SCR_Character__ctor_m3699151839,
 	SCR_Character_Start_m2646289631,
 	SCR_Character_Update_m436452110,
-	SCR_Character_OnDown_m186379110,
-	SCR_Character_OnUp_m1766059999,
+	SCR_Character_GotoViewPosition_m369450806,
 	SCR_EditorPan__ctor_m4250483448,
+	SCR_MoveTarget__ctor_m3136114236,
+	SCR_MoveTarget_Update_m162155601,
 	StereoController__ctor_m3477860167,
 	StereoController_get_Eyes_m3398665077,
 	StereoController_get_Head_m1091666358,

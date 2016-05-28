@@ -275,6 +275,8 @@ struct Builder_t1895597947;
 struct SCR_Character_t2234088204;
 // SCR_EditorPan
 struct SCR_EditorPan_t3113534419;
+// SCR_MoveTarget
+struct SCR_MoveTarget_t2017391935;
 // GvrEye[]
 struct GvrEyeU5BU5D_t2613429915;
 // System.Collections.Generic.IEnumerable`1<GvrEye>
@@ -715,8 +717,10 @@ struct Teleport_t2999409483;
 #include "AssemblyU2DCSharp_proto_PhoneEvent_Types_Type2622298MethodDeclarations.h"
 #include "AssemblyU2DCSharp_SCR_Character2234088204.h"
 #include "AssemblyU2DCSharp_SCR_Character2234088204MethodDeclarations.h"
+#include "AssemblyU2DCSharp_SCR_MoveTarget2017391935.h"
 #include "AssemblyU2DCSharp_SCR_EditorPan3113534419.h"
 #include "AssemblyU2DCSharp_SCR_EditorPan3113534419MethodDeclarations.h"
+#include "AssemblyU2DCSharp_SCR_MoveTarget2017391935MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen4111588415MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen4111588415.h"
 #include "System_Core_System_Func_2_gen1679634021MethodDeclarations.h"
@@ -37871,6 +37875,7 @@ extern "C"  void PhoneEvent_RegisterAllExtensions_m183129087 (Il2CppObject * __t
 extern "C"  void SCR_Character__ctor_m3699151839 (SCR_Character_t2234088204 * __this, const MethodInfo* method)
 {
 	{
+		__this->set_Speed_5((1.0f));
 		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -37883,17 +37888,10 @@ extern "C"  void SCR_Character_Start_m2646289631 (SCR_Character_t2234088204 * __
 	}
 }
 // System.Void SCR_Character::Update()
-extern Il2CppClass* GvrViewer_t671349045_il2cpp_TypeInfo_var;
-extern const uint32_t SCR_Character_Update_m436452110_MetadataUsageId;
 extern "C"  void SCR_Character_Update_m436452110 (SCR_Character_t2234088204 * __this, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (SCR_Character_Update_m436452110_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	float V_0 = 0.0f;
+	Vector3_t3525329789  V_0;
+	memset(&V_0, 0, sizeof(V_0));
 	Vector3_t3525329789  V_1;
 	memset(&V_1, 0, sizeof(V_1));
 	Vector3_t3525329789  V_2;
@@ -37901,86 +37899,85 @@ extern "C"  void SCR_Character_Update_m436452110 (SCR_Character_t2234088204 * __
 	Vector3_t3525329789  V_3;
 	memset(&V_3, 0, sizeof(V_3));
 	{
-		IL2CPP_RUNTIME_CLASS_INIT(GvrViewer_t671349045_il2cpp_TypeInfo_var);
-		GvrViewer_t671349045 * L_0 = GvrViewer_get_Instance_m3566439310(NULL /*static, unused*/, /*hidden argument*/NULL);
+		SCR_MoveTarget_t2017391935 * L_0 = __this->get_Target_3();
 		NullCheck(L_0);
-		bool L_1 = GvrViewer_get_Triggered_m895829718(L_0, /*hidden argument*/NULL);
+		bool L_1 = L_0->get_Active_3();
 		if (!L_1)
 		{
-			goto IL_001e;
+			goto IL_0088;
 		}
 	}
 	{
-		bool L_2 = __this->get_Moving_3();
-		__this->set_Moving_3((bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0));
+		SCR_MoveTarget_t2017391935 * L_2 = __this->get_Target_3();
+		NullCheck(L_2);
+		Transform_t284553113 * L_3 = Component_get_transform_m4257140443(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Vector3_t3525329789  L_4 = Transform_get_position_m2211398607(L_3, /*hidden argument*/NULL);
+		V_1 = L_4;
+		float L_5 = (&V_1)->get_x_1();
+		Transform_t284553113 * L_6 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		Vector3_t3525329789  L_7 = Transform_get_position_m2211398607(L_6, /*hidden argument*/NULL);
+		V_2 = L_7;
+		float L_8 = (&V_2)->get_y_2();
+		SCR_MoveTarget_t2017391935 * L_9 = __this->get_Target_3();
+		NullCheck(L_9);
+		Transform_t284553113 * L_10 = Component_get_transform_m4257140443(L_9, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Vector3_t3525329789  L_11 = Transform_get_position_m2211398607(L_10, /*hidden argument*/NULL);
+		V_3 = L_11;
+		float L_12 = (&V_3)->get_z_3();
+		Vector3__ctor_m2926210380((&V_0), L_5, L_8, L_12, /*hidden argument*/NULL);
+		Transform_t284553113 * L_13 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Transform_t284553113 * L_14 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		Vector3_t3525329789  L_15 = Transform_get_position_m2211398607(L_14, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_16 = V_0;
+		float L_17 = Time_get_smoothDeltaTime_m1119418976(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_18 = __this->get_Speed_5();
+		Vector3_t3525329789  L_19 = Vector3_MoveTowards_m2405650085(NULL /*static, unused*/, L_15, L_16, ((float)((float)((float)((float)L_17*(float)L_18))*(float)(2.0f))), /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Transform_set_position_m3111394108(L_13, L_19, /*hidden argument*/NULL);
 	}
 
-IL_001e:
+IL_0088:
 	{
-		bool L_3 = __this->get_Moving_3();
+		return;
+	}
+}
+// System.Void SCR_Character::GotoViewPosition()
+extern "C"  void SCR_Character_GotoViewPosition_m369450806 (SCR_Character_t2234088204 * __this, const MethodInfo* method)
+{
+	Ray_t1522967639  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	RaycastHit_t46221527  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		GvrHead_t2074018243 * L_0 = __this->get_Head_4();
+		NullCheck(L_0);
+		Ray_t1522967639  L_1 = GvrHead_get_Gaze_m2115332650(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Ray_t1522967639  L_2 = V_0;
+		bool L_3 = Physics_Raycast_m1343340263(NULL /*static, unused*/, L_2, (&V_1), /*hidden argument*/NULL);
 		if (!L_3)
 		{
-			goto IL_00a4;
+			goto IL_003c;
 		}
 	}
 	{
-		Transform_t284553113 * L_4 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		SCR_MoveTarget_t2017391935 * L_4 = __this->get_Target_3();
 		NullCheck(L_4);
-		Vector3_t3525329789  L_5 = Transform_get_position_m2211398607(L_4, /*hidden argument*/NULL);
-		V_1 = L_5;
-		float L_6 = (&V_1)->get_y_2();
-		V_0 = L_6;
-		Transform_t284553113 * L_7 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Transform_t284553113 * L_8 = L_7;
-		NullCheck(L_8);
-		Vector3_t3525329789  L_9 = Transform_get_position_m2211398607(L_8, /*hidden argument*/NULL);
-		Transform_t284553113 * L_10 = __this->get_ViewDirection_2();
-		NullCheck(L_10);
-		Transform_t284553113 * L_11 = Component_get_transform_m4257140443(L_10, /*hidden argument*/NULL);
-		NullCheck(L_11);
-		Vector3_t3525329789  L_12 = Transform_get_forward_m877665793(L_11, /*hidden argument*/NULL);
-		float L_13 = Time_get_smoothDeltaTime_m1119418976(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_14 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_12, L_13, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_15 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_9, L_14, /*hidden argument*/NULL);
-		NullCheck(L_8);
-		Transform_set_position_m3111394108(L_8, L_15, /*hidden argument*/NULL);
-		Transform_t284553113 * L_16 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Transform_t284553113 * L_17 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_17);
-		Vector3_t3525329789  L_18 = Transform_get_position_m2211398607(L_17, /*hidden argument*/NULL);
-		V_2 = L_18;
-		float L_19 = (&V_2)->get_x_1();
-		float L_20 = V_0;
-		Transform_t284553113 * L_21 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_21);
-		Vector3_t3525329789  L_22 = Transform_get_position_m2211398607(L_21, /*hidden argument*/NULL);
-		V_3 = L_22;
-		float L_23 = (&V_3)->get_z_3();
-		Vector3_t3525329789  L_24;
-		memset(&L_24, 0, sizeof(L_24));
-		Vector3__ctor_m2926210380(&L_24, L_19, L_20, L_23, /*hidden argument*/NULL);
-		NullCheck(L_16);
-		Transform_set_position_m3111394108(L_16, L_24, /*hidden argument*/NULL);
+		L_4->set_Active_3((bool)1);
+		SCR_MoveTarget_t2017391935 * L_5 = __this->get_Target_3();
+		NullCheck(L_5);
+		Transform_t284553113 * L_6 = Component_get_transform_m4257140443(L_5, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_7 = RaycastHit_get_point_m4165497838((&V_1), /*hidden argument*/NULL);
+		NullCheck(L_6);
+		Transform_set_position_m3111394108(L_6, L_7, /*hidden argument*/NULL);
 	}
 
-IL_00a4:
+IL_003c:
 	{
-		return;
-	}
-}
-// System.Void SCR_Character::OnDown()
-extern "C"  void SCR_Character_OnDown_m186379110 (SCR_Character_t2234088204 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_Moving_3((bool)1);
-		return;
-	}
-}
-// System.Void SCR_Character::OnUp()
-extern "C"  void SCR_Character_OnUp_m1766059999 (SCR_Character_t2234088204 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_Moving_3((bool)0);
 		return;
 	}
 }
@@ -37989,6 +37986,27 @@ extern "C"  void SCR_EditorPan__ctor_m4250483448 (SCR_EditorPan_t3113534419 * __
 {
 	{
 		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SCR_MoveTarget::.ctor()
+extern "C"  void SCR_MoveTarget__ctor_m3136114236 (SCR_MoveTarget_t2017391935 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void SCR_MoveTarget::Update()
+extern "C"  void SCR_MoveTarget_Update_m162155601 (SCR_MoveTarget_t2017391935 * __this, const MethodInfo* method)
+{
+	{
+		Transform_t284553113 * L_0 = __this->get_Graphic_4();
+		NullCheck(L_0);
+		GameObject_t4012695102 * L_1 = Component_get_gameObject_m1170635899(L_0, /*hidden argument*/NULL);
+		bool L_2 = __this->get_Active_3();
+		NullCheck(L_1);
+		GameObject_SetActive_m3538205401(L_1, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }

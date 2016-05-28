@@ -7311,6 +7311,13 @@ void* RuntimeInvoker_Boolean_t211005341_Ray_t1522967639_RaycastHitU26_t328732345
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
+void* RuntimeInvoker_Boolean_t211005341_Ray_t1522967639_RaycastHitU26_t3287323457 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef bool (*Func)(void* obj, Ray_t1522967639  p1, RaycastHit_t46221527 * p2, const MethodInfo* method);
+	bool ret = ((Func)method->method)(obj, *((Ray_t1522967639 *)args[0]), (RaycastHit_t46221527 *)args[1], method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
 void* RuntimeInvoker_Boolean_t211005341_Ray_t1522967639_RaycastHitU26_t3287323457_Single_t958209021_Int32_t2847414787_Int32_t2847414787 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef bool (*Func)(void* obj, Ray_t1522967639  p1, RaycastHit_t46221527 * p2, float p3, int32_t p4, int32_t p5, const MethodInfo* method);
@@ -12351,7 +12358,7 @@ void* RuntimeInvoker_Il2CppObject_FloatTween_t587838465 (const MethodInfo* metho
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[1709] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[1710] = 
 {
 	RuntimeInvoker_Void_t2779279689,
 	RuntimeInvoker_Boolean_t211005341_Il2CppObject,
@@ -13342,6 +13349,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1709] =
 	RuntimeInvoker_Boolean_t211005341_Vector3_t3525329789_Vector3_t3525329789_RaycastHitU26_t3287323457,
 	RuntimeInvoker_Boolean_t211005341_Vector3_t3525329789_Vector3_t3525329789_RaycastHitU26_t3287323457_Single_t958209021_Int32_t2847414787_Int32_t2847414787,
 	RuntimeInvoker_Boolean_t211005341_Ray_t1522967639_RaycastHitU26_t3287323457_Single_t958209021_Int32_t2847414787,
+	RuntimeInvoker_Boolean_t211005341_Ray_t1522967639_RaycastHitU26_t3287323457,
 	RuntimeInvoker_Boolean_t211005341_Ray_t1522967639_RaycastHitU26_t3287323457_Single_t958209021_Int32_t2847414787_Int32_t2847414787,
 	RuntimeInvoker_Il2CppObject_Ray_t1522967639_Single_t958209021_Int32_t2847414787_Int32_t2847414787,
 	RuntimeInvoker_Il2CppObject_Vector3_t3525329789_Vector3_t3525329789_Single_t958209021_Int32_t2847414787_Int32_t2847414787,
